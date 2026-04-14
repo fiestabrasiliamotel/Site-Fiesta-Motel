@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Cardápio Completo | Fiesta Motel</title>
+    
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link href="style.css" rel="stylesheet"/>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+    <style>
+        body { padding-top: 80px; }
+        
+        .menu-hero {
+            text-align: center;
+            padding: 5rem 2rem 3rem;
+            position: relative;
+        }
+        .menu-hero h1 {
+            font-family: var(--display);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+        .menu-hero h1 .italic {
+            font-weight: 600;
+            color: var(--accent-light);
+            text-shadow: 0 0 20px rgba(199, 125, 255, 0.4);
+        }
+        .menu-hero p {
+            color: var(--gray-light);
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+
+        .category-nav {
+            position: sticky;
+            top: 75px;
+            background: rgba(5,5,5,0.85);
+            backdrop-filter: blur(15px);
+            z-index: 100;
+            padding: 1rem 3rem;
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+            border-bottom: 1px solid rgba(157, 78, 221, 0.1);
+            margin-bottom: 4rem;
+            justify-content: center;
+            scrollbar-width: none;
+        }
+        .category-nav::-webkit-scrollbar { display: none; }
+        .category-nav a {
+            color: var(--gray);
+            white-space: nowrap;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+        .category-nav a:hover, .category-nav a.active {
+            color: var(--accent-light);
+        }
+
+        .menu-section {
+            max-width: 1300px;
+            margin: 0 auto 6rem;
+            padding: 0 3rem;
+        }
+        .menu-section-title {
+            font-family: var(--display);
+            font-size: 2.2rem;
+            color: var(--white);
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .menu-section-title .iconify {
+            color: var(--accent);
+            font-size: 2.5rem;
+        }
+
+        /* Food Cards Grid */
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+        .food-card {
+            background: rgba(28, 20, 39, 0.4);
+            border: 1px solid rgba(157, 78, 221, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.4s var(--ease-out-expo);
+            backdrop-filter: blur(10px);
+        }
+        .food-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4), 0 0 20px rgba(157, 78, 221, 0.15);
+            border-color: rgba(199, 125, 255, 0.4);
+        }
+        .food-img-placeholder {
+            width: 100%;
+            height: 220px;
+            background: linear-gradient(135deg, #180e22, #311c47);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgba(199, 125, 255, 0.4);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            position: relative;
+        }
+        /* Efeito de neon pulsante no placeholder para parecer premium */
+        .food-img-placeholder::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: radial-gradient(circle, rgba(199, 125, 255, 0.2) 0%, transparent 60%);
+            border-radius: 50%;
+            filter: blur(5px);
+            animation: pulse-glow 3s infinite alternate;
+        }
+        @keyframes pulse-glow {
+            from { transform: scale(1); opacity: 0.5; }
+            to { transform: scale(2); opacity: 1; }
+        }
+
+        .food-img-placeholder .iconify {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            z-index: 2;
+        }
+        .food-info {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .food-title {
+            font-size: 1.3rem;
+            color: var(--white);
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+        }
+        .food-desc {
+            font-size: 0.85rem;
+            color: var(--gray);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        .food-price {
+            font-family: var(--sans);
+            font-size: 1.2rem;
+            color: var(--accent-light);
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .food-price span {
+            font-size: 0.8rem;
+            color: var(--gray);
+            font-weight: 300;
+        }
+        .btn-add {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--accent);
+            color: var(--accent-light);
+            background: rgba(157, 78, 221, 0.05);
+            transition: all 0.3s;
+        }
+        .btn-add:hover {
+            background: var(--accent);
+            color: var(--white);
+            box-shadow: 0 0 15px rgba(157, 78, 221, 0.4);
+        }
+
+        /* Subcategories */
+        .sub-category {
+            margin-top: 3.5rem;
+            margin-bottom: 2rem;
+            font-size: 1.4rem;
+            color: var(--accent-light);
+            font-weight: 500;
+            font-family: var(--display);
+            border-left: 3px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        /* Simple List for Frigobar/Convenience */
+        .simple-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .simple-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem;
+            background: rgba(28, 20, 39, 0.2);
+            border-bottom: 1px solid rgba(157, 78, 221, 0.1);
+            transition: background 0.3s;
+        }
+        .simple-item:hover {
+            background: rgba(157, 78, 221, 0.1);
+        }
+        .simple-title {
+            color: var(--white-dim);
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+        .simple-price {
+            color: var(--accent-light);
+            font-weight: 600;
+        }
+
+        @media (max-width: 1000px) {
+            .category-nav { justify-content: flex-start; padding: 1rem 2rem; }
+            .menu-section { padding: 0 2rem; }
+            .food-grid { grid-template-columns: 1fr; }
+            .simple-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ambient Glowing orbs -->
+    <div class="ambient-glow glow-purple"></div>
+    <div class="ambient-glow glow-dark"></div>
+
+    <!-- Navigation -->
+    <nav class="nav scrolled" id="nav" style="background: rgba(5,5,5,0.95); padding: 1rem 3rem;">
+        <a class="nav-logo" href="index.html">
+            FIESTA <span class="title-stroke">MOTEL</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#suites">Suítes</a></li>
+            <li><a href="#" style="color: var(--white);">Cardápio</a></li>
+        </ul>
+        <a class="nav-cta" href="#">+ Pedir Item</a>
+    </nav>
+
+    <!-- Hero -->
+    <div class="menu-hero">
+        <h1>O SABOR DO <span class="italic">PRAZER</span></h1>
+        <p>Explore nosso menu completo, entregue com exclusividade na sua suíte, 24 horas por dia.</p>
+    </div>
+
+    <!-- Categories Nav -->
+    <div class="category-nav">
+        <a href="#petiscos">Petiscos</a>
+        <a href="#sanduiches">Sanduíches</a>
+        <a href="#principais">Pratos Principais</a>
+        <a href="#bebidas">Bebidas & Drinks</a>
+        <a href="#frigobar">Frigobar</a>
+        <a href="#extras">Conveniência</a>
+    </div>
+
+    <!-- ========= PETISCOS ========= -->
+    <section class="menu-section" id="petiscos">
+        <h2 class="menu-section-title">
+            <span class="iconify" data-icon="solar:french-fries-linear"></span> Petiscos
+        </h2>
+        <div class="food-grid">
+            <div class="food-card">
+                <div class="food-img-placeholder">
+                    <span class="iconify" data-icon="solar:camera-linear"></span>
+                    <span>Espaço para Foto</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-title">Carne de Sol</h3>
+                    <p class="food-desc">Carne de Sol em cubos, suculenta, acompanhada com mandioca frita ou cozida.</p>
+                    <div class="food-price">R$ 49,90 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-img-placeholder">
+                    <span class="iconify" data-icon="solar:camera-linear"></span>
+                    <span>Espaço para Foto</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-title">Frango a Passarinho</h3>
+                    <p class="food-desc">Pedaços de coxa-sobrecoxa divinamente temperados e fritos, super crocantes.</p>
+                    <div class="food-price">R$ 30,00 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-img-placeholder">
+                    <span class="iconify" data-icon="solar:camera-linear"></span>
+                    <span>Espaço para Foto</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-title">Batata Frita c/ Bacon</h3>
+                    <p class="food-desc">Deliciosa porção de batata frita quente, salpicada com queijo derretido e bacon.</p>
+                    <div class="food-price">R$ 29,90 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= SANDUÍCHES & CAFÉ ========= -->
+    <section class="menu-section" id="sanduiches">
+        <h2 class="menu-section-title">
+            <span class="iconify" data-icon="solar:hamburger-menu-linear"></span> Sanduíches & Café
+        </h2>
+        <div class="food-grid">
+            <div class="food-card">
+                <div class="food-img-placeholder">
+                    <span class="iconify" data-icon="solar:camera-linear"></span>
+                    <span>Espaço para Foto</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-title">Hambúrguer Artesanal</h3>
+                    <p class="food-desc">Pão de hambúrguer selado, blend (150g), queijo minas curado. Acompanha batata frita.</p>
+                    <div class="food-price">R$ 25,00 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-img-placeholder">
+                    <span class="iconify" data-icon="solar:camera-linear"></span>
+                    <span>Espaço para Foto</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-title">Café da Manhã Completo</h3>
+                    <p class="food-desc">Leite, café, biscoitos, torradas, geleia, pão, presunto, queijo, ovos e frutas.</p>
+                    <div class="food-price">R$ 24,90 <span>/ 1 Pessoa</span></div>
+                    <div class="food-price" style="margin-top: 5px;">R$ 37,00 <span>/ 2 Pessoas</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= PRATOS PRINCIPAIS ========= -->
+    <section class="menu-section" id="principais">
+        <h2 class="menu-section-title">
+            <span class="iconify" data-icon="solar:chef-hat-linear"></span> Pratos Principais
+        </h2>
+        <div class="food-grid">
+            <div class="food-card">
+                <div class="food-img-placeholder">
+                    <span class="iconify" data-icon="solar:camera-linear"></span>
+                    <span>Espaço para Foto</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-title">Fiesta Brasil</h3>
+                    <p class="food-desc">Contra-filé, ovo frito perfeito, arroz, feijão, salada e farofa.</p>
+                    <div class="food-price">R$ 35,00 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-img-placeholder">
+                    <span class="iconify" data-icon="solar:camera-linear"></span>
+                    <span>Espaço para Foto</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-title">Picadinho de Carne</h3>
+                    <p class="food-desc">Saboroso picadinho, feijão, arroz, salada fresca e farofa.</p>
+                    <div class="food-price">R$ 49,90 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-img-placeholder">
+                    <span class="iconify" data-icon="solar:camera-linear"></span>
+                    <span>Espaço para Foto</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-title">Parmegiana de Carne</h3>
+                    <p class="food-desc">Coxão mole bovino, molho de tomate artesanal e queijo muçarela. Arroz ou fritas.</p>
+                    <div class="food-price">R$ 68,00 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-img-placeholder">
+                    <span class="iconify" data-icon="solar:camera-linear"></span>
+                    <span>Espaço para Foto</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-title">Escalope Molho Madeira</h3>
+                    <p class="food-desc">Carne bovina macia no ponto perfeito, banhada ao molho madeira.</p>
+                    <div class="food-price">R$ 69,90 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-img-placeholder">
+                    <span class="iconify" data-icon="solar:camera-linear"></span>
+                    <span>Espaço para Foto</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-title">Escondidinho de Carne Seca</h3>
+                    <p class="food-desc">Carne seca desfiada coberta com um cremoso purê de abóbora.</p>
+                    <div class="food-price">R$ 65,00 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-img-placeholder">
+                    <span class="iconify" data-icon="solar:camera-linear"></span>
+                    <span>Espaço para Foto</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-title">Fettuccine c/ Frango</h3>
+                    <p class="food-desc">Massa fettuccine envolta com delicioso molho de queijos variados e frango.</p>
+                    <div class="food-price">R$ 59,90 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-img-placeholder">
+                    <span class="iconify" data-icon="solar:camera-linear"></span>
+                    <span>Espaço para Foto</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-title">Frango ao Molho de Laranja</h3>
+                    <p class="food-desc">Peito de frango grelhado regado com uma sofisticada redução cítrica de laranja.</p>
+                    <div class="food-price">R$ 59,90 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-img-placeholder">
+                    <span class="iconify" data-icon="solar:camera-linear"></span>
+                    <span>Espaço para Foto</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-title">Panelinha Mineira</h3>
+                    <p class="food-desc">Conforto em uma panela: frango caipira, linguiça saborosa e arroz.</p>
+                    <div class="food-price">R$ 59,90 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= BEBIDAS & DRINKS ========= -->
+    <section class="menu-section" id="bebidas">
+        <h2 class="menu-section-title">
+            <span class="iconify" data-icon="solar:wineglass-linear"></span> Bebidas & Drinks
+        </h2>
+        
+        <h3 class="sub-category">Drinks & Coquetéis</h3>
+        <div class="food-grid">
+            <div class="food-card">
+                <div class="food-img-placeholder"><span class="iconify" data-icon="solar:camera-linear"></span><span>Foto do Drink</span></div>
+                <div class="food-info">
+                    <h3 class="food-title">Gin Morango / Maça Fiesta</h3>
+                    <p class="food-desc">Refrescante e exótico preparado com botânicos selecionados.</p>
+                    <div class="food-price">R$ 35,00 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-img-placeholder"><span class="iconify" data-icon="solar:camera-linear"></span><span>Foto do Drink</span></div>
+                <div class="food-info">
+                    <h3 class="food-title">Caipirinha / Caipiroska</h3>
+                    <p class="food-desc">Um clássico da coquetelaria brasileira muito gelado.</p>
+                    <div class="food-price">R$ 25,00 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-img-placeholder"><span class="iconify" data-icon="solar:camera-linear"></span><span>Espumante</span></div>
+                <div class="food-info">
+                    <h3 class="food-title">Espumante Chandon</h3>
+                    <p class="food-desc">Garrafa de 750ml, perfeita para celebrações inesquecíveis.</p>
+                    <div class="food-price">R$ 80,00 <button class="btn-add">Pedir</button></div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="sub-category">Destilados & Cervejas (Doses/Latas)</h3>
+        <div class="simple-list">
+            <div class="simple-item"><span class="simple-title">JW 12 Anos Black Label</span><span class="simple-price">R$ 24,00</span></div>
+            <div class="simple-item"><span class="simple-title">JW 8 Anos Red Label</span><span class="simple-price">R$ 19,90</span></div>
+            <div class="simple-item"><span class="simple-title">Vodka Absolut</span><span class="simple-price">R$ 15,00</span></div>
+            <div class="simple-item"><span class="simple-title">Tequila</span><span class="simple-price">R$ 17,00</span></div>
+            <div class="simple-item"><span class="simple-title">Heineken (Long Neck)</span><span class="simple-price">R$ 14,00</span></div>
+        </div>
+    </section>
+
+    <!-- ========= FRIGOBAR & EXTRAS ========= -->
+    <section class="menu-section" id="frigobar">
+        <h2 class="menu-section-title">
+            <span class="iconify" data-icon="solar:box-linear"></span> Frigobar Diário
+        </h2>
+        <div class="simple-list">
+            <div class="simple-item"><span class="simple-title">Red Bull</span><span class="simple-price">R$ 16,00</span></div>
+            <div class="simple-item"><span class="simple-title">Smirnoff Ice</span><span class="simple-price">R$ 12,00</span></div>
+            <div class="simple-item"><span class="simple-title">Água D. Coco</span><span class="simple-price">R$ 7,00</span></div>
+            <div class="simple-item"><span class="simple-title">Refrigerante Lata</span><span class="simple-price">R$ 6,00</span></div>
+            <div class="simple-item"><span class="simple-title">Chocolate Ferrero Rocher</span><span class="simple-price">R$ 13,90</span></div>
+            <div class="simple-item"><span class="simple-title">Balde de Gelo (Grande)</span><span class="simple-price">R$ 9,00</span></div>
+            <div class="simple-item"><span class="simple-title">Água Mineral / Gás</span><span class="simple-price">R$ 5,00</span></div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="extras">
+        <h2 class="menu-section-title">
+            <span class="iconify" data-icon="solar:bag-3-linear"></span> Farmácia & Souvenirs
+        </h2>
+        <div class="simple-list">
+            <div class="simple-item"><span class="simple-title">Preservativos</span><span class="simple-price">R$ 3,00</span></div>
+            <div class="simple-item"><span class="simple-title">Absorventes</span><span class="simple-price">R$ 4,00</span></div>
+            <div class="simple-item"><span class="simple-title">Sonrisal</span><span class="simple-price">R$ 4,00</span></div>
+            <div class="simple-item"><span class="simple-title">Roupão Motel Fiesta</span><span class="simple-price">R$ 180,00</span></div>
+            <div class="simple-item"><span class="simple-title">Taça Vinho/Champanhe Fiesta</span><span class="simple-price">R$ 25,00</span></div>
+            <div class="simple-item"><span class="simple-title">Copo Fiesta</span><span class="simple-price">R$ 20,00</span></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="padding-top: 3rem;">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Fiesta Brasília Motel. Alta Gastronomia e Conforto.</p>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelectorAll('.category-nav a').forEach(a => a.classList.remove('active'));
+                    const id = entry.target.getAttribute('id');
+                    const activeLink = document.querySelector(`.category-nav a[href="#${id}"]`);
+                    if(activeLink) activeLink.classList.add('active');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('.menu-section').forEach((section) => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
