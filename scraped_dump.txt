@@ -1,0 +1,856 @@
+TEXT: Petiscos
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Sanduíches
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Pratos Principais
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Sobremesas
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Bebidas
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Farmácia
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Souvenirs
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Frigobar
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Petiscos
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Sanduíches
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Pratos Principais
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Sobremesas
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Bebidas
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Farmácia
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Souvenirs
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Frigobar
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Petiscos
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Sanduíches
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Pratos Principais
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Sobremesas
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Bebidas
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Farmácia
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Souvenirs
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Frigobar
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Petiscos
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Sanduíches
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Pratos Principais
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Sobremesas
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Bebidas
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Farmácia
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Souvenirs
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Frigobar
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Petiscos
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Imagens meramente Ilustrativas
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2024/11/cropped-Avatar-Fiesta-NOVO-flaticon.png
+
+TEXT: Carne de sol
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/carne-de-sol-r5h9q9zlve4xyz7nz3gffvm631bmmt1sqvqqvqhbkg.jpg
+
+TEXT: Carne de Sol em cubos, com mandioca frita ou cozida.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/carne-de-sol-r5h9q9zlve4xyz7nz3gffvm631bmmt1sqvqqvqhbkg.jpg
+
+TEXT: R$49,90
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/carne-de-sol-r5h9q9zlve4xyz7nz3gffvm631bmmt1sqvqqvqhbkg.jpg
+
+TEXT: Frango a Passarinho super Crocante
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/Frango-a-passarinho-fiesta-r5hbsbpw9ji4l3njl3qdv6xerscl0f0k9dvrwgote8.jpg
+
+TEXT: Pedaços de coxa-sobrecoxa temperada e frita, super crocante.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/Frango-a-passarinho-fiesta-r5hbsbpw9ji4l3njl3qdv6xerscl0f0k9dvrwgote8.jpg
+
+TEXT: R$ 30,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/Frango-a-passarinho-fiesta-r5hbsbpw9ji4l3njl3qdv6xerscl0f0k9dvrwgote8.jpg
+
+TEXT: Batata Frita Com Bacon
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/batata-frita-com-bacon-r0osms44xlug81dfk3t7s9hbgvwgk4dskht4o0xf4g.png
+
+TEXT: Porção de batata frita salpicada com queijo
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/batata-frita-com-bacon-r0osms44xlug81dfk3t7s9hbgvwgk4dskht4o0xf4g.png
+
+TEXT: e bacon
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/batata-frita-com-bacon-r0osms44xlug81dfk3t7s9hbgvwgk4dskht4o0xf4g.png
+
+TEXT: R$ 29,90
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/batata-frita-com-bacon-r0osms44xlug81dfk3t7s9hbgvwgk4dskht4o0xf4g.png
+
+TEXT: Limão (unidade)
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/limao-r5inxbrqo9unzgdf2pb7gdiqr8ltivwsuy2dv15fio.jpg
+
+TEXT: Um limão cortado.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/limao-r5inxbrqo9unzgdf2pb7gdiqr8ltivwsuy2dv15fio.jpg
+
+TEXT: R$ 1,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/limao-r5inxbrqo9unzgdf2pb7gdiqr8ltivwsuy2dv15fio.jpg
+
+TEXT: Café da manhã/Hamburguer
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/limao-r5inxbrqo9unzgdf2pb7gdiqr8ltivwsuy2dv15fio.jpg
+
+TEXT: Imagens meramente Ilustrativas
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/limao-r5inxbrqo9unzgdf2pb7gdiqr8ltivwsuy2dv15fio.jpg
+
+TEXT: Hambúrguer Artesanal
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/hambfrit-r0osms44xlug81dfk3t7s9hbgvwgk4dskht4o0xf4g.jpg
+
+TEXT: Pão de hambúrguer, carne de hambúrguer (150 g), queijo minas curado, batata frita.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/hambfrit-r0osms44xlug81dfk3t7s9hbgvwgk4dskht4o0xf4g.jpg
+
+TEXT: R$ 25,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/hambfrit-r0osms44xlug81dfk3t7s9hbgvwgk4dskht4o0xf4g.jpg
+
+TEXT: Café da Manhã completo
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/cafe-1024x683.jpg
+
+TEXT: Leite, café, biscoito Clube Social tradicional, torradas, geleia, pão de forma, presunto, queijo muçarela, ovo (frito ou cozido), suco de laranja e fruta da estação.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/cafe-1024x683.jpg
+
+TEXT: R$ 24,90 (1 pessoa)
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/cafe-1024x683.jpg
+
+TEXT: R$ 37,00 (2 pessoas)
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/cafe-1024x683.jpg
+
+TEXT: Pratos Principais
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/cafe-1024x683.jpg
+
+TEXT: Imagens meramente Ilustrativas
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/cafe-1024x683.jpg
+
+TEXT: FIESTA BRASIL
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/PF-r5ip3ht39pkqtp4dufhot8g64irlu2baznnjwwmmds.jpg
+
+TEXT: Contra-filé, ovo, arroz, feijão, salada e farofa.​
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/PF-r5ip3ht39pkqtp4dufhot8g64irlu2baznnjwwmmds.jpg
+
+TEXT: R$ 35,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/PF-r5ip3ht39pkqtp4dufhot8g64irlu2baznnjwwmmds.jpg
+
+TEXT: Picadinho de Carne
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PICADINHO-1-1024x683.jpg
+
+TEXT: Coxão mole bovino, arroz, molho de tomate, mandioca, cebola, tomate, alho, óleo de soja, sal light, cenoura, margarina, cebolinha, salsão, açúcar, colorau, amaciante de carne e folha de louro.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PICADINHO-1-1024x683.jpg
+
+TEXT: Acompanha arroz branco e feijão preto.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PICADINHO-1-1024x683.jpg
+
+TEXT: NÃO CONTÉM GLÚTEN. ALÉRGICOS: CONTÉM DERIVADOS DE SOJA E PODE CONTER LEITE.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PICADINHO-1-1024x683.jpg
+
+TEXT: R$ 49,90
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PICADINHO-1-1024x683.jpg
+
+TEXT: Parmegiana de Frango
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PARMEGIANA-3-1024x679.jpg
+
+TEXT: Filé de frango, molho de tomate, mandioca, arroz agulhinha, queijo muçarela, farinha de rosca, óleo de soja, cebola, margarina, alho, sal light, farinha de trigo enriquecido de ferro e ácido fólico, açúcar, ovo e louro.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PARMEGIANA-3-1024x679.jpg
+
+TEXT: Acompanha arroz e purê de mandioca.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PARMEGIANA-3-1024x679.jpg
+
+TEXT: CONTÉM GLÚTEN. CONTÉM LACTOSE. ALÉRGICOS: CONTÉM OVO, DERIVADOS DE TRIGO, SOJA E LEITE. PODE CONTER CENTEIO, CEVADA E AVEIA.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PARMEGIANA-3-1024x679.jpg
+
+TEXT: R$ 49,90
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PARMEGIANA-3-1024x679.jpg
+
+TEXT: Parmegiana de Carne
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PARMEGIANA-DE-CARNE-1024x680.jpg
+
+TEXT: Coxão mole bovino, molho de tomate, queijo muçarela, farinha de rosca, óleo de soja, cebola, farinha de trigo enriquecida com ferro e ácido fólico, alho, açúcar, ovo, sal light, amaciante de carne e folha de louro. Acompanha arroz ou batata frita.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PARMEGIANA-DE-CARNE-1024x680.jpg
+
+TEXT: CONTÉM GLÚTEN. CONTÉM LACTOSE. ALÉRGICOS: CONTÉM OVO, DERIVADOS DE TRIGO, SOJA E LEITE. PODE CONTER CENTEIO, CEVADA E AVEIA.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PARMEGIANA-DE-CARNE-1024x680.jpg
+
+TEXT: R$ 68,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PARMEGIANA-DE-CARNE-1024x680.jpg
+
+TEXT: Escalope Molho Madeira
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/escalope-repaginado-cortado-3-rie089d7noo405sds7nmckvymd89fnai143prf9az4.jpg
+
+TEXT: Coxão mole bovino, molho madeira, champignon, margarina, amido de milho, amaciante de carne e sal light.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/escalope-repaginado-cortado-3-rie089d7noo405sds7nmckvymd89fnai143prf9az4.jpg
+
+TEXT: Acompanha arroz.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/escalope-repaginado-cortado-3-rie089d7noo405sds7nmckvymd89fnai143prf9az4.jpg
+
+TEXT: NÃO CONTÉM GLÚTEN. ALÉRGICOS: CONTÉM DERIVADOS DE SOJA E PODE CONTER LEITE.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/escalope-repaginado-cortado-3-rie089d7noo405sds7nmckvymd89fnai143prf9az4.jpg
+
+TEXT: R$ 69,90
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/escalope-repaginado-cortado-3-rie089d7noo405sds7nmckvymd89fnai143prf9az4.jpg
+
+TEXT: Escondidinho de Carne Seca com Abóbora
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/10.04-escondidinho-de-abobora-1024x717.jpg
+
+TEXT: Abóbora cabotiá, carne seca bovina, leite desnatado, queijo cremoso, margarina, cebola, leite de coco, farinha de trigo enriquecida com ferro e ácido fólico, óleo de soja, pimenta de cheiro, sal light, pimenta dedo de moça, pimenta do reino e noz moscada.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/10.04-escondidinho-de-abobora-1024x717.jpg
+
+TEXT: Acompanha arroz.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/10.04-escondidinho-de-abobora-1024x717.jpg
+
+TEXT: CONTÉM GLÚTEN. CONTÉM LACTOSE. ALÉRGICOS: CONTÉM LEITE E DERIVADOS. CONTÉM DERIVADOS DE TRIGO E SOJA. PODE CONTER CENTEIO, CEVADA E AVEIA.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/10.04-escondidinho-de-abobora-1024x717.jpg
+
+TEXT: R$ 65,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/10.04-escondidinho-de-abobora-1024x717.jpg
+
+TEXT: Panelinha Mineira (Frango, Linguiça e Arroz)
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PANELINHA-MINEIRA-3-1024x680.jpg
+
+TEXT: Filé de frango, linguiça suína fina, arroz agulhinha, muçarela, molho de tomate, cebola, tomate, ervilha fresca, creme de cebola, alho, óleo de soja, pimenta de cheiro, cebolinha, sal light, salsa, açafrão, colorau, açúcar e louro.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PANELINHA-MINEIRA-3-1024x680.jpg
+
+TEXT: CONTÉM GLÚTEN. CONTÉM LACTOSE. ALÉRGICOS: CONTÉM DERIVADOS DE TRIGO, SOJA E LEITE.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PANELINHA-MINEIRA-3-1024x680.jpg
+
+TEXT: R$ 59,90
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PANELINHA-MINEIRA-3-1024x680.jpg
+
+TEXT: Strogonoff de Frango
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/Estrogonofe-Light-de-Frango-com-Arroz-Branco-rea5sp7uv5l08oyy3wy01jyyafik1lc36p063whcyk.webp
+
+TEXT: Filé de frango, batata Inglesa, arroz agulhinha, leite desnatado, catchup, margarina, farinha de trigo enriquecida com ferro e ácido fólico, óleo de soja, molho de tomate, cebola, sal light, alho, amido de milho, salsa, açafrão e noz moscada.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/Estrogonofe-Light-de-Frango-com-Arroz-Branco-rea5sp7uv5l08oyy3wy01jyyafik1lc36p063whcyk.webp
+
+TEXT: Acompanha arroz.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/Estrogonofe-Light-de-Frango-com-Arroz-Branco-rea5sp7uv5l08oyy3wy01jyyafik1lc36p063whcyk.webp
+
+TEXT: CONTÉM GLÚTEN. CONTÉM LACTOSE. ALÉRGICOS: CONTÉM LEITE, CONTÉM DERIVADOS DE TRIGO, SOJA. PODE CONTER CENTEIO, CEVADA E AVEIA.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/Estrogonofe-Light-de-Frango-com-Arroz-Branco-rea5sp7uv5l08oyy3wy01jyyafik1lc36p063whcyk.webp
+
+TEXT: R$ 55,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/Estrogonofe-Light-de-Frango-com-Arroz-Branco-rea5sp7uv5l08oyy3wy01jyyafik1lc36p063whcyk.webp
+
+TEXT: Fettuccine com Frango ao Molho de Queijos
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/FETTUCCINE-COM-FGO-AO-M.-QUEIJOS-2.jpg
+
+TEXT: Filé de frango, leite desnatado, massa fettuccine grano duro, queijo cremoso, cebola, queijo gorgonzola, margarina, farinha de trigo enriquecida com ferro e ácido fólico, óleo de soja, alho, salsa, sal light e noz moscada.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/FETTUCCINE-COM-FGO-AO-M.-QUEIJOS-2.jpg
+
+TEXT: CONTÉM GLÚTEN. CONTÉM LACTOSE. ALÉRGICOS: CONTÉM LEITE E DERIVADOS.  CONTÉM DERIVADOS DE TRIGO E SOJA. PODE CONTER CENTEIO, CEVADA E AVEIA.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/FETTUCCINE-COM-FGO-AO-M.-QUEIJOS-2.jpg
+
+TEXT: R$ 59,90
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/FETTUCCINE-COM-FGO-AO-M.-QUEIJOS-2.jpg
+
+TEXT: Frango ao Molho de Laranja
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/com-molho-de-laranja_landscapeThumbnail_pt-1-rea6gxi31er3itrwmdzsbfupk036gpizumergok0kc.jpeg
+
+TEXT: Sobrecoxa desossada, laranja, açúcar, limão, amido de milho, margarina, vinagre balsâmico, sal light e pimenta do reino.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/com-molho-de-laranja_landscapeThumbnail_pt-1-rea6gxi31er3itrwmdzsbfupk036gpizumergok0kc.jpeg
+
+TEXT: Acompanha arroz.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/com-molho-de-laranja_landscapeThumbnail_pt-1-rea6gxi31er3itrwmdzsbfupk036gpizumergok0kc.jpeg
+
+TEXT: NÃO CONTÉM GLÚTEN. ALÉRGICOS: CONTÉM DERIVADOS DE SOJA E PODE CONTER LEITE.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/com-molho-de-laranja_landscapeThumbnail_pt-1-rea6gxi31er3itrwmdzsbfupk036gpizumergok0kc.jpeg
+
+TEXT: R$ 59,90
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/elementor/thumbs/com-molho-de-laranja_landscapeThumbnail_pt-1-rea6gxi31er3itrwmdzsbfupk036gpizumergok0kc.jpeg
+
+TEXT: Penne Basílico
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PENNE-BASILICO-4-1024x680.jpg
+
+TEXT: Tomate pelati, massa penne grano duro, muçarela de búfala, cebola, alho, azeite extra virgem, manjericão fresco, açúcar, sal light e louro.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PENNE-BASILICO-4-1024x680.jpg
+
+TEXT: CONTÉM GLÚTEN. CONTÉM LACTOSE. ALÉRGICOS: CONTÉM DERIVADOS DE TRIGO E LEITE. PODE CONTER OVO E SOJA.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PENNE-BASILICO-4-1024x680.jpg
+
+TEXT: R$ 59,90
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PENNE-BASILICO-4-1024x680.jpg
+
+TEXT: Bebidas
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PENNE-BASILICO-4-1024x680.jpg
+
+TEXT: Imagens meramente Ilustrativas
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/11/PENNE-BASILICO-4-1024x680.jpg
+
+TEXT: Cremes
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/01/colorful-fruit-1.jpg
+
+TEXT: 20,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/01/colorful-fruit-1.jpg
+
+TEXT: Suco de fruta batido com leite.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/01/colorful-fruit-1.jpg
+
+TEXT: Sucos
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/04/c27b3622-adee-4e5b-b414-c021eb10d4c6.jpg
+
+TEXT: Suco de laranja natural
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/04/c27b3622-adee-4e5b-b414-c021eb10d4c6.jpg
+
+TEXT: Suco de laranja com mamão.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/04/c27b3622-adee-4e5b-b414-c021eb10d4c6.jpg
+
+TEXT: Suco de Polpa (abacaxi, morango ou maracujá)
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/04/c27b3622-adee-4e5b-b414-c021eb10d4c6.jpg
+
+TEXT: R$ 18,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/04/c27b3622-adee-4e5b-b414-c021eb10d4c6.jpg
+
+TEXT: Caipiroska
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2022/12/caipiroska.png
+
+TEXT: Vodka
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2022/12/caipiroska.png
+
+TEXT: R$ 25,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2022/12/caipiroska.png
+
+TEXT: Caipirinha
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2022/12/caipitequila.png
+
+TEXT: Cachaça
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2022/12/caipitequila.png
+
+TEXT: R$ 25,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2022/12/caipitequila.png
+
+TEXT: GIN MAÇA FIESTA
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/02/GIN-MACA-FIESTA.png
+
+TEXT: tônica
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/02/GIN-MACA-FIESTA.png
+
+TEXT: xarope de maça verde
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/02/GIN-MACA-FIESTA.png
+
+TEXT: e gelo
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/02/GIN-MACA-FIESTA.png
+
+TEXT: R$ 35,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/02/GIN-MACA-FIESTA.png
+
+TEXT: GIN MORANGO FIESTA
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/02/GIN-MORANGO-FIESTA.png
+
+TEXT: Xarope de Morango
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/02/GIN-MORANGO-FIESTA.png
+
+TEXT: água tônica
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/02/GIN-MORANGO-FIESTA.png
+
+TEXT: e gelo
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/02/GIN-MORANGO-FIESTA.png
+
+TEXT: R$ 35,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2023/02/GIN-MORANGO-FIESTA.png
+
+TEXT: Cozumel
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Cerveja, suco de limão e sal na taça.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 30,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Espumante Chandon
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 80,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Espumante Garrafa 750ml
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Espumante Casa Perini
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 89,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Espumante Garrafa 750ml
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Whisky Johnnie Walker 8 anos (Dose)
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 19,90
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Whisky Johnnie Walker 12 anos (Dose)
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 24,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Cerveja Long Neck
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 14,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Heineken
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Cerveja Lata
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 6,50
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: 269ml Diversas Marcas
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Vodka Smirnoff (Dose)
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 12,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Vodka Absolut (Dose)
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 15,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Rum Montila (Dose)
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 8,90
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Tequila (Dose)
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 17,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Vinho Marcus James
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 28,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Vinho Del Grano
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 29,90
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Cozumel
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 30,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Farmácia
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Sonrisal
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 4,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Absorventes
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 4,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Barbeador Descartável
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 5,90
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Preservativos
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 3,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Unidade
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Preservativos
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 10,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: 3 Unidades
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Remédio
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 5,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Souvenirs
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Cobrança de itens em hipótese de danos pelo cliente.
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Copo Fiesta
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 20,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Cinzero
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 20,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Fronha
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 35,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Lençol
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 90,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Prato
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 30,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Roupão
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 180,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Taça Licor Fiesta
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 10,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Taça Champanhe Fiesta
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 25,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Taça Sorvete Fiesta
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 25,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Taça Vinho Fiesta
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 20,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Toalha de Rosto Fiesta
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 30,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Toalha de Banho Fiesta
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 60,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Tapete Fiesta
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 35,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Sensor de TV
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 350,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Controle Sistema
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 350,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Detector de Incêndio
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 350,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Fósforo
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 4,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Prendedor Simples
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 10,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Frigobar
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Água com gás
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 5,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Água Mineral
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 5,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Batata Ruffles
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 8,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Abridor de Garrafa
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 60,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Água de Coco
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 7,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Red Bull
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 16,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Energéticos
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 10,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Chocolate Talento
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 4,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Balde de gelo grande
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 9,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Balde de gelo pequeno
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 6,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Ferrero Rocher
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 13,90
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Hall's
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 6,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Smirnoff Ice
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 12,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Suco Del Valle
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 7,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Keep Cooler
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 10,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Coca-Cola
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 6,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Fanta
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 6,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Guaraná Antartica
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: R$ 6,00
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Precisa de Ajuda?
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Fiesta Brasília Motel
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Podemos Ajudar?
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: Abrir Chat
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: var sbiajaxurl = "https://www.fiestamotel.com.br/wp-admin/admin-ajax.php";
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: .joinchat{--ch:142;--cs:70%;--cl:49%;--bw:1}
+/*# sourceURL=joinchat-inline-css */
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: #rs-demo-id {}
+/*# sourceURL=rs-plugin-settings-inline-css */
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.35.8","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_editor_one":true,"import-export-customization":true,"e_pro_variables":true},"urls":{"assets":"https:\/\/www.fiestamotel.com.br\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/www.fiestamotel.com.br\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/www.fiestamotel.com.br\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"d70ad0ca90"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":4700,"title":"Card%C3%A1pio%20completo%20%E2%80%93%20Fiesta%20Motel%20%7C%20Su%C3%ADtes%20Exclusivas%20%7C%20Bras%C3%ADlia","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: var jkit_ajax_url = "https://www.fiestamotel.com.br/?jkit-ajax-request=jkit_elements", jkit_nonce = "d120361637";
+//# sourceURL=elementor-frontend-js-after
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/www.fiestamotel.com.br\/wp-admin\/admin-ajax.php","nonce":"6fbb8436a8","urls":{"assets":"https:\/\/www.fiestamotel.com.br\/wp-content\/plugins\/pro-elements\/assets\/","rest":"https:\/\/www.fiestamotel.com.br\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/www.fiestamotel.com.br\/wp-content\/plugins\/pro-elements\/modules\/lottie\/assets\/animations\/default.json"}};
+//# sourceURL=elementor-pro-frontend-js-before
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: var ekit_config = {"ajaxurl":"https://www.fiestamotel.com.br/wp-admin/admin-ajax.php","nonce":"b08705a13a"};
+//# sourceURL=elementskit-elementor-js-extra
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.fiestamotel.com.br/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"}}
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+
+TEXT: /*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://www.fiestamotel.com.br/wp-includes/js/wp-emoji-loader.min.js
+IMG: https://www.fiestamotel.com.br/wp-content/uploads/2025/05/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg
+

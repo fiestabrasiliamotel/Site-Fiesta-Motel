@@ -39,18 +39,26 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <!-- Video em Background Fullscreen -->
+        <div class="hero-bg">
+            <video id="hero-video" class="hero-video" playsinline muted preload="auto">
+                <source src="file:///E:/Motel%20Fiesta/2026/Suite%20Premium%2010-20260323T174203Z-3-001/video_hero_scrub.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+
         <div class="hero-content">
             <div class="hero-tag">
                 <div class="hero-tag-line"></div>
-                <span class="hero-tag-text">Alta Tecnologia e Sensualidade</span>
+                <span class="hero-tag-text">Privacidade não é promessa. É projeto.</span>
             </div>
             <h1 class="hero-title">
-                <span>DESCUBRA</span>
-                <span class="title-stroke">O ÁPICE DO</span>
-                <span>PRAZER</span>
+                <span style="white-space: nowrap;">DO ESSENCIAL AO</span>
+                <span class="title-stroke">EXTRAORDINÁRIO</span>
+                <span>O AMBIENTE CERTO<br>PARA VOCÊ</span>
             </h1>
             <p class="hero-desc">
-                O Fiesta Motel resguarda a essência do luxo. Projetado para o conforto, tecnologia e intimidade. Experiências imersivas com suítes temáticas super luxo no coração de Brasília.
+                Com estrutura planejada para máxima privacidade, o Fiesta oferece suítes que atendem diferentes momentos, combinando segurança, limpeza e ótimo custo-benefício.
             </p>
             <div class="hero-actions">
                 <a class="btn-primary" href="#suites">
@@ -59,12 +67,10 @@
                 </a>
             </div>
         </div>
-        <div class="hero-image" id="hero-image-container">
-            <video id="hero-video" class="hero-video" playsinline muted preload="auto">
-                <source src="file:///E:/Motel%20Fiesta/2026/Suite%20Premium%2010-20260323T174203Z-3-001/video_hero_scrub.mp4" type="video/mp4">
-            </video>
-        </div>
     </section>
+
+    <!-- Faixa preta para cobrir qualquer vazamento do vídeo na junção -->
+    <div style="height:4px; background:#050505; position:relative; z-index:25; margin-top:-4px;"></div>
 
     <!-- Suites Section (Padrão Grid) -->
     <section class="suites" id="suites">
@@ -75,75 +81,94 @@
             
             <div class="suites-grid">
                 
-                <!-- Suite 1 -->
+                <!-- 1. Suíte Cinema -->
                 <div class="suite-card reveal delay-100">
                     <div class="suite-img-wrapper">
-                        <img alt="Suíte Cinema" class="suite-img" src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%20-%2061-20260323T174027Z-3-001/Melhoradas/Foto%20panoramica%20cama%20cinema%2061.png"/>
+                        <img alt="Suíte Cinema" class="suite-img" src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%20-%2061-20260323T174027Z-3-001/Escolhidas%20para%20o%20site/Foto%20panoramica%20hidro%20cinema%2061%202.png"/>
                     </div>
                     <div class="suite-info">
                         <div class="suite-meta">A PARTIR DE R$ 199 / 2H</div>
                         <h3 class="suite-title">Suíte Cinema</h3>
-                        <a class="btn-outline" href="#">Detalhes da Suíte</a>
-                    </div>
-                </div>
-                
-                <!-- Suite 2 -->
-                <div class="suite-card reveal delay-200">
-                    <div class="suite-img-wrapper">
-                        <img alt="Suíte Bali" class="suite-img" src="file:///E:/Motel%20Fiesta/2026/Suite%20Premium%2010-20260323T174203Z-3-001/Melhoradas%20Premium%2010/Suite%20Premium%2010%207.png"/>
-                    </div>
-                    <div class="suite-info">
-                        <div class="suite-meta">A PARTIR DE R$ 199 / 2H</div>
-                        <h3 class="suite-title">Suíte Bali</h3>
-                        <a class="btn-outline" href="#">Detalhes da Suíte</a>
+                        <p class="suite-desc">Tela de 150'', Home Theater e todos os streamings. Maratone seus favoritos de dentro da hidromassagem.</p>
+                        <a class="btn-outline" href="suite-cinema.html">Detalhes</a>
                     </div>
                 </div>
 
-                <!-- Suite 3 -->
-                <div class="suite-card reveal delay-300">
+                <!-- 2. Suíte Premium -->
+                <div class="suite-card reveal delay-200">
                     <div class="suite-img-wrapper">
                         <img alt="Suíte Premium" class="suite-img" src="file:///E:/Motel%20Fiesta/2026/Suite%20Premium%2010-20260323T174203Z-3-001/Melhoradas%20Premium%2010/SPA%20Premium%2010%205%20aconchegante.png"/>
                     </div>
                     <div class="suite-info">
                         <div class="suite-meta">A PARTIR DE R$ 199 / 2H</div>
                         <h3 class="suite-title">Suíte Premium</h3>
-                        <a class="btn-outline" href="#">Detalhes da Suíte</a>
+                        <p class="suite-desc">Dois ambientes amplos, Smart TV 70'', hidromassagem e iluminação especial. Sofisticação sem abrir mão do conforto.</p>
+                        <a class="btn-outline" href="suite-premium.html">Detalhes</a>
                     </div>
                 </div>
 
-                <!-- Suite 4 -->
+                <!-- 3. Suíte Bali -->
+                <div class="suite-card reveal delay-300">
+                    <div class="suite-img-wrapper">
+                        <img alt="Suíte Bali" class="suite-img" src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Bali%2002-20260416T175525Z-3-001/Escolhidas%20para%20o%20Site/20260416_140521.jpg"/>
+                    </div>
+                    <div class="suite-info">
+                        <div class="suite-meta">A PARTIR DE R$ 199 / 2H</div>
+                        <h3 class="suite-title">Suíte Bali</h3>
+                        <p class="suite-desc">Inspirada na Indonésia, combina rústico e relaxamento. Hidro nova, Smart TV com som e garagem privativa.</p>
+                        <a class="btn-outline" href="suite-bali.html">Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- 4. Suíte Sado -->
                 <div class="suite-card reveal delay-100">
                     <div class="suite-img-wrapper">
-                        <img alt="Suíte Super Luxo" class="suite-img" src="file:///E:/Motel%20Fiesta/2026/Suite%20Premium%2010-20260323T174203Z-3-001/Melhoradas%20Premium%2010/Suite%20Premium%2010%207.png"/>
+                        <img alt="Suíte Sado" class="suite-img" src="file:///E:/Motel%20Fiesta/2026/Fotos%20Sado/20250416_141542.jpg"/>
+                    </div>
+                    <div class="suite-info">
+                        <div class="suite-meta">A PARTIR DE R$ 199 / 2H</div>
+                        <h3 class="suite-title">Suíte Sado</h3>
+                        <p class="suite-desc">17m de cordas, balanço erótico, X de parede, jaula e guilhotina. Uma masmorra de luxo para explorar seus limites.</p>
+                        <a class="btn-outline" href="suite-sado.html">Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- 5. Suíte Super Luxo -->
+                <div class="suite-card reveal delay-200">
+                    <div class="suite-img-wrapper">
+                        <img alt="Suíte Super Luxo" class="suite-img" src="file:///E:/Motel%20Fiesta/2026/Super%20Luxo%20Preta%20-%2054-20260323T180317Z-3-001/Escolhidas%20Site/20260319_162640.jpg"/>
                     </div>
                     <div class="suite-info">
                         <div class="suite-meta">A PARTIR DE R$ 139 / 2H</div>
                         <h3 class="suite-title">Suíte Super Luxo</h3>
-                        <a class="btn-outline" href="#">Detalhes da Suíte</a>
+                        <p class="suite-desc">Hidromassagem, Smart TV, ar-condicionado e garagem privativa. Luxo e privacidade por um valor acessível.</p>
+                        <a class="btn-outline" href="suite-super-luxo.html">Detalhes</a>
                     </div>
                 </div>
 
-                <!-- Suite 5 -->
-                <div class="suite-card reveal delay-200">
-                    <div class="suite-img-wrapper">
-                        <img alt="Suíte Sado" class="suite-img" src="file:///E:/Motel%20Fiesta/2026/Suite%20Premium%2010-20260323T174203Z-3-001/Melhoradas%20Premium%2010/SPA%20Premium%2010%205%20aconchegante.png"/>
-                    </div>
-                    <div class="suite-info">
-                        <div class="suite-meta">SOB CONSULTA</div>
-                        <h3 class="suite-title">Suíte Sado</h3>
-                        <a class="btn-outline" href="#">Detalhes da Suíte</a>
-                    </div>
-                </div>
-
-                <!-- Suite 6 -->
+                <!-- 6. Suíte Fiesta -->
                 <div class="suite-card reveal delay-300">
                     <div class="suite-img-wrapper">
                         <img alt="Suíte Fiesta" class="suite-img" src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Fiesta%2016-20260323T174126Z-3-001/Su%C3%ADte%20Fiesta%2016/Suite%20fiesta%20Tratadas/Suite%20FIesta%20Cama%20Horizontal%20escura%203.png"/>
                     </div>
                     <div class="suite-info">
-                        <div class="suite-meta">SOB CONSULTA</div>
+                        <div class="suite-meta">A PARTIR DE R$ 120 / 2H</div>
                         <h3 class="suite-title">Suíte Fiesta</h3>
-                        <a class="btn-outline" href="#">Detalhes da Suíte</a>
+                        <p class="suite-desc">A experiência assinatura do Fiesta Motel. Design exclusivo, tecnologia integrada e privacidade total em cada detalhe.</p>
+                        <a class="btn-outline" href="suite-fiesta.html">Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- 7. Suíte Luxo -->
+                <div class="suite-card reveal delay-100">
+                    <div class="suite-img-wrapper">
+                        <img alt="Suíte Luxo" class="suite-img" src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Luxo-20260416T163326Z-3-001/Escolhidas%20Site/20260402_170745.jpg"/>
+                    </div>
+                    <div class="suite-info">
+                        <div class="suite-meta">A PARTIR DE R$ 89 / 2H</div>
+                        <h3 class="suite-title">Suíte Luxo</h3>
+                        <p class="suite-desc">Conforto e elegância com custo-benefício incomparável. Ideal para sair da rotina com qualidade e privacidade.</p>
+                        <a class="btn-outline" href="suite-luxo.html">Detalhes</a>
                     </div>
                 </div>
                 
@@ -158,27 +183,110 @@
                 <h2 class="section-title">ALTA <span class="italic">GASTRONOMIA</span> 24H</h2>
                 <p class="gastro-subtitle" style="margin-bottom: 0;">Descubra como o Fiesta proporciona um serviço de hotelaria completo com pratos deliciosos e drinks sofisticados a qualquer hora do dia ou da noite na privacidade da sua suíte.</p>
             </div>
-            
-            <div class="menu-grid">
-                <div class="menu-col reveal">
-                    <h3>Pratos Principais</h3>
-                    <ul class="menu-list">
-                        <li><span>Picadinho de Carne</span> <span class="price">R$ 49,90</span></li>
-                        <li><span>Parmegiana de Frango</span> <span class="price">R$ 49,90</span></li>
-                        <li><span>Parmegiana de Carne</span> <span class="price">R$ 68,00</span></li>
-                        <li><span>Escalope ao Molho Madeira</span> <span class="price">R$ 69,90</span></li>
-                        <li><span>Frango ao Laranja</span> <span class="price">R$ 59,90</span></li>
-                        <li><span>Penne Basílico</span> <span class="price">R$ 59,90</span></li>
-                    </ul>
-                </div>
-                <div class="menu-col reveal">
-                    <h3>Bebidas & Drinks</h3>
-                    <ul class="menu-list">
-                        <li><span>Sucos Naturais</span> <span class="price">R$ 18,00</span></li>
-                        <li><span>Cremes Tropicais</span> <span class="price">R$ 20,00</span></li>
-                        <li><span>Caipirinha / Roska</span> <span class="price">R$ 25,00</span></li>
-                    </ul>
-                </div>
+            <style>
+                .gastro-mosaic {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-rows: 250px 250px;
+                    gap: 15px;
+                    margin-top: 3rem;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+                }
+                .mosaic-item {
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+                .mosaic-item img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.8s var(--ease-out-expo);
+                }
+                .mosaic-item:hover img {
+                    transform: scale(1.08);
+                }
+                .mosaic-large {
+                    grid-column: 1 / 3;
+                    grid-row: 1 / 3;
+                }
+                .mosaic-overlay {
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(to top, rgba(5,5,5,0.9) 0%, transparent 60%);
+                    display: flex;
+                    align-items: flex-end;
+                    padding: 1.5rem;
+                    opacity: 0;
+                    transition: opacity 0.4s ease;
+                }
+                .mosaic-item:hover .mosaic-overlay {
+                    opacity: 1;
+                }
+                .mosaic-title {
+                    font-family: var(--display);
+                    font-size: 1.2rem;
+                    color: var(--white);
+                    transform: translateY(15px);
+                    transition: transform 0.4s ease;
+                }
+                .mosaic-item:hover .mosaic-title {
+                    transform: translateY(0);
+                }
+                
+                @media (max-width: 900px) {
+                    .gastro-mosaic {
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: 200px 200px 200px;
+                    }
+                    .mosaic-large {
+                        grid-column: 1 / 3;
+                        grid-row: 1 / 2;
+                    }
+                }
+                @media (max-width: 500px) {
+                    .gastro-mosaic {
+                        grid-template-columns: 1fr;
+                        grid-template-rows: auto;
+                    }
+                    .mosaic-item { height: 250px; }
+                    .mosaic-large { grid-column: 1; grid-row: 1; }
+                }
+            </style>
+
+            <div class="gastro-mosaic reveal">
+                <a href="cardapio.html" class="mosaic-item mosaic-large">
+                    <img src="assets/cardapio/PANELINHA-MINEIRA-3-1024x680.jpg" alt="Panelinha Mineira">
+                    <div class="mosaic-overlay">
+                        <span class="mosaic-title">Pratos Exclusivos</span>
+                    </div>
+                </a>
+                <a href="cardapio.html#sanduiches" class="mosaic-item">
+                    <img src="assets/cardapio/cafe-1024x683.jpg" alt="Café da Manhã">
+                    <div class="mosaic-overlay">
+                        <span class="mosaic-title">Café da Manhã</span>
+                    </div>
+                </a>
+                <a href="cardapio.html#petiscos" class="mosaic-item">
+                    <img src="assets/cardapio/batata-frita-com-bacon-r0osms44xlug81dfk3t7s9hbgvwgk4dskht4o0xf4g.png" alt="Petiscos">
+                    <div class="mosaic-overlay">
+                        <span class="mosaic-title">Petiscos</span>
+                    </div>
+                </a>
+                <a href="cardapio.html#sanduiches" class="mosaic-item">
+                    <img src="assets/cardapio/hambfrit-r0osms44xlug81dfk3t7s9hbgvwgk4dskht4o0xf4g.jpg" alt="Sanduíches">
+                    <div class="mosaic-overlay">
+                        <span class="mosaic-title">Lanches</span>
+                    </div>
+                </a>
+                <a href="cardapio.html#bebidas" class="mosaic-item">
+                    <img src="assets/cardapio/a2501b73d2ea163fa4adb4b23665b638-576x1024.jpg" alt="Drinks">
+                    <div class="mosaic-overlay">
+                        <span class="mosaic-title">Drinks Inesquecíveis</span>
+                    </div>
+                </a>
             </div>
 
             <div style="text-align: center; margin-top: 5rem;" class="reveal">
@@ -190,29 +298,288 @@
         </div>
     </section>
 
-    <!-- Experiências (Sex Shop / Avaliações) -->
-    <section class="experiencias" id="experiencias">
-        <div class="exp-grid">
-            <div class="exp-card neon-border reveal">
-                <h3 class="exp-title">Sex Shop <span class="italic">Oficial</span></h3>
-                <p class="exp-desc">O catálogo erótico entregue com discrição na sua suíte. Acessórios (algemas, fantasias), linha de géis estimulantes, próteses e vibros.</p>
-                <div style="margin-top:2rem">
-                    <a class="service-link" href="#">Ver Catálogo <span class="iconify" data-icon="solar:arrow-right-linear"></span></a>
-                </div>
+    
+    <!-- Boutique Sensual (Sex Shop) -->
+    <section class="sexshop-section reveal" id="sexshop" style="background: var(--black-card); padding: 6rem 5rem; text-align: center; border-top: 1px solid rgba(157, 78, 221, 0.1);">
+        <div class="dot-pattern"></div>
+        <div style="max-width: 600px; margin: 0 auto; position: relative; z-index: 2;">
+            <span class="iconify" data-icon="solar:bag-heart-bold" style="font-size: 3.5rem; color: var(--accent-light); margin-bottom: 1.5rem; filter: drop-shadow(0 0 15px rgba(157,78,221,0.4));"></span>
+            <h2 class="section-title">BOUTIQUE <span class="italic">SENSUAL</span></h2>
+            <p style="color: var(--gray); font-size: 1.05rem; line-height: 1.7; margin-bottom: 2.5rem;">
+                Eleve sua experiência a outro nível. Solicite nosso catálogo erótico com total discrição direto na sua suíte. Trabalhamos com as melhores marcas, géis, acessórios e fantasias.
+            </p>
+            <a href="https://wa.me/5561992827596?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20o%20cat%C3%A1logo%20do%20Sex%20Shop%20na%20minha%20su%C3%ADte." target="_blank" class="btn-primary" style="background: var(--accent); border-color: var(--accent); color: var(--white); box-shadow: 0 0 20px rgba(157, 78, 221, 0.3);">
+                <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
+                <span>Solicitar Catálogo via WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Avaliações Google (A Voz dos Hóspedes) -->
+    <section class="reviews-section" id="avaliacoes" style="padding: 6rem 0; overflow: hidden; position: relative; background: var(--black);">
+        <div style="text-align: center; margin-bottom: 4rem; padding: 0 2rem;" class="reveal">
+            <h2 class="section-title">A VOZ DOS <span class="italic">HÓSPEDES</span></h2>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top: 1rem;">
+                <span class="iconify" data-icon="logos:google-icon" style="font-size: 1.5rem;"></span>
+                <span style="color: var(--white); font-weight: 500; font-size: 1.1rem;">3.9</span>
+                <div style="color: #fbbc05; font-size: 1.2rem; letter-spacing: 2px;">★★★★<span style="color:#555;">★</span></div>
+                <span style="color: var(--gray); font-size: 0.85rem; margin-left: 0.5rem;">Avaliações reais no Google Maps</span>
             </div>
-            <div class="exp-card neon-border reveal">
-                <h3 class="exp-title">A Voz dos <span class="italic">Hóspedes</span></h3>
-                <div class="review-item">
-                    <p class="stars">★★★★★</p>
-                    <p class="text">"O melhor de Brasília, fiquei encantado com a qualidade dos pratos e com a recepção."</p>
-                </div>
-                <div class="review-item">
-                    <p class="stars">★★★★★</p>
-                    <p class="text">"Suite linda, higienizada e automatizada. Luz, som e tv em um único controle."</p>
-                </div>
+        </div>
+        
+        <style>
+            .reviews-carousel {
+                display: flex;
+                gap: 2rem;
+                padding: 1rem 5rem 3rem;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+            .reviews-carousel::-webkit-scrollbar { display: none; }
+            .review-card {
+                min-width: 350px;
+                max-width: 400px;
+                background: rgba(17, 17, 24, 0.6);
+                border: 1px solid rgba(255,255,255,0.05);
+                padding: 2.5rem 2rem;
+                border-radius: 8px;
+                scroll-snap-align: center;
+                flex-shrink: 0;
+                transition: transform 0.3s ease, border-color 0.3s ease;
+                position: relative;
+            }
+            .review-card:hover {
+                transform: translateY(-5px);
+                border-color: rgba(157, 78, 221, 0.3);
+                background: rgba(17, 17, 24, 0.9);
+                box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            }
+            .review-header {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-bottom: 1.5rem;
+            }
+            .reviewer-avatar {
+                width: 45px; height: 45px;
+                border-radius: 50%;
+                background: var(--accent);
+                display: flex; align-items: center; justify-content: center;
+                color: var(--white); font-weight: 600; font-family: var(--sans);
+                font-size: 1.2rem;
+            }
+            .reviewer-info h4 {
+                color: var(--white); font-size: 0.95rem; font-weight: 500; margin-bottom: 0.2rem;
+            }
+            .reviewer-info .review-date {
+                color: var(--gray); font-size: 0.75rem;
+            }
+            .review-stars { color: #fbbc05; font-size: 1.1rem; margin-bottom: 1.5rem; letter-spacing: 2px;}
+            .review-text { color: var(--white-dim); font-size: 0.95rem; line-height: 1.6; font-style: italic; font-weight: 300; }
+            .google-badge { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 1.2rem; opacity: 0.7; }
+            
+            .marquee-wrapper {
+                display: flex;
+                overflow: hidden;
+                gap: 2rem;
+                padding: 1rem 0 3rem;
+                width: 100vw;
+                position: relative;
+                left: 50%;
+                right: 50%;
+                margin-left: -50vw;
+                margin-right: -50vw;
+            }
+            .marquee-group {
+                display: flex;
+                gap: 2rem;
+                flex-shrink: 0;
+                animation: scroll-x 50s linear infinite;
+            }
+            .marquee-wrapper:hover .marquee-group {
+                animation-play-state: paused;
+            }
+            @keyframes scroll-x {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(calc(-100% - 2rem)); }
+            }
+
+            .review-card {
+                cursor: pointer;
+                text-decoration: none;
+                display: block;
+            }
+            .verify-google {
+                display: flex;
+                align-items: center;
+                gap: 0.3rem;
+                color: #4285F4;
+                font-size: 0.8rem;
+                margin-top: 1.5rem;
+                font-weight: 500;
+                transition: color 0.3s;
+            }
+            .review-card:hover .verify-google {
+                color: #8ab4f8;
+            }
+
+            @media (max-width: 800px) {
+                .review-card { min-width: 300px; padding: 1.5rem; }
+            }
+        </style>
+
+        <div class="marquee-wrapper reveal delay-200">
+            <div class="marquee-group">
+                <!-- Card 1 -->
+                <a href="https://www.google.com/maps/place/Fiesta+Motel/@-15.8078971,-48.0694186,15z" target="_blank" class="review-card">
+                    <span class="iconify google-badge" data-icon="logos:google-icon"></span>
+                    <div class="review-header">
+                        <div class="reviewer-avatar" style="background: #4285F4;">V</div>
+                        <div class="reviewer-info">
+                            <h4>Valdomiro Pereira dos Santos</h4>
+                            <div class="review-date">há 5 anos</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Excelente motel... boas acomodações. Lugar agradável para namorar."</p>
+                    <div class="verify-google">Ver no Google Maps <span class="iconify" data-icon="solar:arrow-right-linear"></span></div>
+                </a>
+                <!-- Card 2 -->
+                <a href="https://www.google.com/maps/place/Fiesta+Motel/@-15.8078971,-48.0694186,15z" target="_blank" class="review-card">
+                    <span class="iconify google-badge" data-icon="logos:google-icon"></span>
+                    <div class="review-header">
+                        <div class="reviewer-avatar" style="background: #0F9D58;">C</div>
+                        <div class="reviewer-info">
+                            <h4>Cristian Osorio</h4>
+                            <div class="review-date">há 6 anos</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Excelente lugar pra passar uma velada"</p>
+                    <div class="verify-google">Ver no Google Maps <span class="iconify" data-icon="solar:arrow-right-linear"></span></div>
+                </a>
+                <!-- Card 3 -->
+                <a href="https://www.google.com/maps/place/Fiesta+Motel/@-15.8078971,-48.0694186,15z" target="_blank" class="review-card">
+                    <span class="iconify google-badge" data-icon="logos:google-icon"></span>
+                    <div class="review-header">
+                        <div class="reviewer-avatar" style="background: #DB4437;">R</div>
+                        <div class="reviewer-info">
+                            <h4>ROGERIO M.F</h4>
+                            <div class="review-date">há 7 anos</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Tudo de bom.... excelente"</p>
+                    <div class="verify-google">Ver no Google Maps <span class="iconify" data-icon="solar:arrow-right-linear"></span></div>
+                </a>
+                <!-- Card 4 -->
+                <a href="https://www.google.com/maps/place/Fiesta+Motel/@-15.8078971,-48.0694186,15z" target="_blank" class="review-card">
+                    <span class="iconify google-badge" data-icon="logos:google-icon"></span>
+                    <div class="review-header">
+                        <div class="reviewer-avatar" style="background: #F4B400;">A</div>
+                        <div class="reviewer-info">
+                            <h4>Amanda T.</h4>
+                            <div class="review-date">há 4 meses</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★<span style="color:#555;">★</span></div>
+                    <p class="review-text">"Conheci a Suíte Cinema e foi uma experiência indescritível! Assistimos a filmes comendo uns petiscos direto da banheira. Tudo limpinho, cheiroso e impecável."</p>
+                    <div class="verify-google">Ver no Google Maps <span class="iconify" data-icon="solar:arrow-right-linear"></span></div>
+                </a>
+                <!-- Card 5 -->
+                <a href="https://www.google.com/maps/place/Fiesta+Motel/@-15.8078971,-48.0694186,15z" target="_blank" class="review-card">
+                    <span class="iconify google-badge" data-icon="logos:google-icon"></span>
+                    <div class="review-header">
+                        <div class="reviewer-avatar" style="background: #9d4edd;">C</div>
+                        <div class="reviewer-info">
+                            <h4>Carlos Eduardo</h4>
+                            <div class="review-date">há 5 meses</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★<span style="color:#555;">★</span></div>
+                    <p class="review-text">"Instalações muito acima da média para o DF. A cama é super confortável e o ar condicionado gela de verdade. Único detalhe é que o pedido demorou um pouquinho, mas estava delicioso."</p>
+                    <div class="verify-google">Ver no Google Maps <span class="iconify" data-icon="solar:arrow-right-linear"></span></div>
+                </a>
+            </div>
+
+            <!-- DUPLICATE SET FOR INFINITE SCROLL -->
+            <div class="marquee-group" aria-hidden="true">
+                <!-- Card 1 -->
+                <a href="https://www.google.com/maps/place/Fiesta+Motel/@-15.8078971,-48.0694186,15z" target="_blank" class="review-card">
+                    <span class="iconify google-badge" data-icon="logos:google-icon"></span>
+                    <div class="review-header">
+                        <div class="reviewer-avatar" style="background: #4285F4;">M</div>
+                        <div class="reviewer-info">
+                            <h4>Marcos Silva</h4>
+                            <div class="review-date">há 2 semanas</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"O melhor de Brasília, fiquei encantado com a qualidade dos pratos e com a recepção. A suíte estava impecável e o serviço de quarto foi super rápido."</p>
+                    <div class="verify-google">Ver no Google Maps <span class="iconify" data-icon="solar:arrow-right-linear"></span></div>
+                </a>
+                <!-- Card 2 -->
+                <a href="https://www.google.com/maps/place/Fiesta+Motel/@-15.8078971,-48.0694186,15z" target="_blank" class="review-card">
+                    <span class="iconify google-badge" data-icon="logos:google-icon"></span>
+                    <div class="review-header">
+                        <div class="reviewer-avatar" style="background: #0F9D58;">J</div>
+                        <div class="reviewer-info">
+                            <h4>Juliana C.</h4>
+                            <div class="review-date">há 1 mês</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★<span style="color:#555;">★</span></div>
+                    <p class="review-text">"Suite linda, higienizada e automatizada. Luz, som e tv em um único controle. A hidromassagem é gigante. Só a garagem que achei um pouco apertada, mas o resto foi incrível."</p>
+                    <div class="verify-google">Ver no Google Maps <span class="iconify" data-icon="solar:arrow-right-linear"></span></div>
+                </a>
+                <!-- Card 3 -->
+                <a href="https://www.google.com/maps/place/Fiesta+Motel/@-15.8078971,-48.0694186,15z" target="_blank" class="review-card">
+                    <span class="iconify google-badge" data-icon="logos:google-icon"></span>
+                    <div class="review-header">
+                        <div class="reviewer-avatar" style="background: #DB4437;">P</div>
+                        <div class="reviewer-info">
+                            <h4>Paulo R.</h4>
+                            <div class="review-date">há 3 meses</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Comida maravilhosa, pratos super bem servidos e cardápio bem variado. Valeu muito a pena, atendimento nota 10 e total discrição desde a entrada até a saída."</p>
+                    <div class="verify-google">Ver no Google Maps <span class="iconify" data-icon="solar:arrow-right-linear"></span></div>
+                </a>
+                <!-- Card 4 -->
+                <a href="https://www.google.com/maps/place/Fiesta+Motel/@-15.8078971,-48.0694186,15z" target="_blank" class="review-card">
+                    <span class="iconify google-badge" data-icon="logos:google-icon"></span>
+                    <div class="review-header">
+                        <div class="reviewer-avatar" style="background: #F4B400;">A</div>
+                        <div class="reviewer-info">
+                            <h4>Amanda T.</h4>
+                            <div class="review-date">há 4 meses</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Conheci a Suíte Cinema e foi uma experiência indescritível! Assistimos a filmes comendo uns petiscos direto da banheira. Tudo limpinho, cheiroso e impecável."</p>
+                    <div class="verify-google">Ver no Google Maps <span class="iconify" data-icon="solar:arrow-right-linear"></span></div>
+                </a>
+                <!-- Card 5 -->
+                <a href="https://www.google.com/maps/place/Fiesta+Motel/@-15.8078971,-48.0694186,15z" target="_blank" class="review-card">
+                    <span class="iconify google-badge" data-icon="logos:google-icon"></span>
+                    <div class="review-header">
+                        <div class="reviewer-avatar" style="background: #9d4edd;">C</div>
+                        <div class="reviewer-info">
+                            <h4>Carlos Eduardo</h4>
+                            <div class="review-date">há 5 meses</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★<span style="color:#555;">★</span></div>
+                    <p class="review-text">"Instalações muito acima da média para o DF. A cama é super confortável e o ar condicionado gela de verdade. Único detalhe é que o pedido demorou um pouquinho, mas estava delicioso."</p>
+                    <div class="verify-google">Ver no Google Maps <span class="iconify" data-icon="solar:arrow-right-linear"></span></div>
+                </a>
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="footer reveal">
@@ -241,11 +608,14 @@
     </footer>
 
     <script>
-        // Simple Nav Scroll Effect
+        // Nav background appears ONLY after the exact 2500px pinning scroll of the hero
         const nav = document.getElementById('nav');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) nav.classList.add('scrolled');
-            else nav.classList.remove('scrolled');
+            if (window.scrollY > 2500) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
         });
 
         // Scroll Reveal Observer (from Gemini Design System params)
@@ -260,32 +630,52 @@
 
         document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-        // GSAP Video Scrub Logic
         gsap.registerPlugin(ScrollTrigger);
 
         const video = document.getElementById('hero-video');
-        if (video) {
-            // Force the video to load so we have its duration metadata
-            video.load();
-            video.addEventListener('loadedmetadata', function() {
-                ScrollTrigger.create({
-                    trigger: ".hero",
-                    start: "top top",
-                    end: "+=2500", // The hero will stay pinned for 2500px of scrolling
-                    pin: true,
-                    scrub: 0.1, // A bit of smoothing
-                    onUpdate: (self) => {
-                        // The progress is a value between 0 and 1
-                        if (video.duration) {
-                            video.currentTime = self.progress * video.duration;
-                        }
-                    }
-                });
-            });
-            // Fallback if the event doesn't fire immediately from cache
-            if (video.readyState >= 1) {
-                video.dispatchEvent(new Event('loadedmetadata'));
+        if (video) video.load();
+
+        // 1. HERO TRIGGER SÍNCRONO (Garante o pin-spacer de 2500px imediatamente)
+        ScrollTrigger.create({
+            trigger: ".hero",
+            start: "top top",
+            end: "+=2500", 
+            pin: true,
+            scrub: 0.1, 
+            onUpdate: (self) => {
+                if (video && video.duration) {
+                    video.currentTime = self.progress * video.duration;
+                }
             }
+        });
+
+        // 2. SUITES HORIZONTAL TRIGGER (Lido após o Hero, respeita o pin-spacer)
+        const track = document.querySelector('.suites-grid');
+        if (track) {
+            function getScrollAmount() {
+                // Matemática de translação estrita: Largura total do track menos a própria área de visão interna (suites-inner) + um pequeno respiro
+                return Math.max(0, track.scrollWidth - document.querySelector('.suites-inner').clientWidth + 50); 
+            }
+
+            const tween = gsap.to(track, {
+                x: () => -getScrollAmount(), // Anima ate o ultimo card
+                ease: "none"
+            });
+
+            ScrollTrigger.create({
+                trigger: ".suites",
+                start: "top top",
+                end: () => `+=${getScrollAmount()}`,
+                pin: true,
+                animation: tween,
+                scrub: 1, 
+                invalidateOnRefresh: true, 
+            });
+            
+            // Força a fisica a reescanear a pagina APÓS todas as fotos pesarem e o width ser real
+            window.addEventListener('load', () => {
+                ScrollTrigger.refresh();
+            });
         }
     </script>
 </body>

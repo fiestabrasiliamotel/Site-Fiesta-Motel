@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suíte Cinema — Fiesta Motel Brasília</title>
+    <meta name="description" content="Dois ambientes de puro luxo, Smart TV 70'', hidromassagem e iluminação especial. A Suíte Premium é a escolha para quem não abre mão da sofisticação no Fiesta Motel Brasília.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <style>
+        /* ===== RESET & TOKENS ===== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --black:        #050505;
+            --black-soft:   #0d0d10;
+            --black-card:   #111118;
+            --accent:       #9d4edd;
+            --accent-light: #c77dff;
+            --accent-glow:  rgba(199, 125, 255, 0.15);
+            --gold:         #c9a84c;
+            --gold-light:   #e8c97a;
+            --gold-glow:    rgba(201, 168, 76, 0.12);
+            --white:        #ffffff;
+            --white-dim:    #e0dced;
+            --gray:         #827b93;
+            --gray-light:   #a39eb5;
+            --sans:         'Outfit', sans-serif;
+            --serif:        'Playfair Display', serif;
+            --ease:         cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        html { scroll-behavior: smooth; overflow-x: hidden; scrollbar-width: none; }
+        html::-webkit-scrollbar { display: none; }
+        body { font-family: var(--sans); background: var(--black); color: var(--white); -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+
+        /* ===== REVEAL ANIMATION ===== */
+        .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); }
+        .reveal-left.active { opacity: 1; transform: translateX(0); }
+
+        /* ===== NAV ===== */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            padding: 1.5rem 3rem;
+            display: flex; align-items: center; justify-content: space-between;
+            background: linear-gradient(to bottom, rgba(5,5,5,0.9) 0%, transparent 100%);
+            backdrop-filter: blur(0px);
+            transition: all 0.4s ease;
+        }
+        nav.scrolled {
+            background: rgba(5,5,5,0.95);
+            backdrop-filter: blur(20px);
+            padding: 1rem 3rem;
+            border-bottom: 1px solid rgba(157, 78, 221, 0.1);
+        }
+        .nav-logo { font-family: var(--sans); font-size: 1.3rem; font-weight: 600; letter-spacing: 0.25em; }
+        .nav-logo span { color: transparent; -webkit-text-stroke: 1px var(--gray); }
+        .nav-back {
+            display: flex; align-items: center; gap: 0.5rem;
+            font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase;
+            color: var(--gray); transition: color 0.3s ease;
+        }
+        .nav-back:hover { color: var(--accent-light); }
+
+        /* ===== HERO ===== */
+        .hero {
+            height: 100vh; position: relative; overflow: hidden;
+            display: flex; align-items: flex-end;
+        }
+        .hero-bg {
+            position: absolute; inset: 0;
+        }
+        .hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+        .hero-overlay {
+            position: absolute; inset: 0;
+            background:
+                linear-gradient(to right, rgba(5,5,5,0.85) 0%, rgba(5,5,5,0.5) 55%, transparent 100%),
+                linear-gradient(to top, #050505 0%, rgba(5,5,5,0.6) 35%, transparent 65%);
+        }
+        .hero-content {
+            position: relative; z-index: 10;
+            padding: 0 5rem 5rem;
+            max-width: 750px;
+        }
+        .hero-breadcrumb {
+            display: flex; align-items: center; gap: 0.8rem;
+            margin-bottom: 1.5rem; font-size: 0.7rem; letter-spacing: 0.2em;
+            text-transform: uppercase; color: var(--gray);
+        }
+        .hero-breadcrumb .sep { color: var(--accent); }
+        .hero-suite-tag {
+            display: inline-flex; align-items: center; gap: 0.8rem;
+            margin-bottom: 1.2rem;
+        }
+        .hero-suite-tag-line { width: 50px; height: 1px; background: var(--gold); box-shadow: 0 0 8px var(--gold); }
+        .hero-suite-tag-text { font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold-light); }
+        .hero-title {
+            font-family: var(--sans);
+            font-size: clamp(4rem, 7vw, 8rem);
+            font-weight: 200;
+            line-height: 0.95;
+            letter-spacing: -0.02em;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+        .hero-title strong {
+            font-weight: 600;
+            color: transparent;
+            -webkit-text-stroke: 1px var(--accent-light);
+        }
+        .hero-subtitle {
+            font-family: var(--serif);
+            font-size: clamp(1rem, 2vw, 1.5rem);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--gray-light);
+            margin-bottom: 2.5rem;
+        }
+        .hero-cta-row { display: flex; align-items: center; gap: 2rem; }
+        .btn-gold {
+            display: inline-flex; align-items: center; gap: 0.7rem;
+            padding: 0.9rem 2.2rem;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+            color: #1a1000;
+            font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(201, 168, 76, 0.3);
+        }
+        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(201, 168, 76, 0.5); }
+        .hero-price-chip {
+            font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase;
+            color: var(--gray-light);
+        }
+        .hero-price-chip strong { font-size: 1.4rem; font-weight: 300; color: var(--white); letter-spacing: -0.02em; }
+
+        /* ===== DECORATIVE DIVIDER ===== */
+        .divider {
+            display: flex; align-items: center; gap: 1.5rem;
+            padding: 0 5rem; margin: 2rem 0;
+        }
+        .divider-line { flex: 1; height: 1px; background: rgba(255,255,255,0.06); }
+        .divider-diamond {
+            width: 6px; height: 6px; background: var(--accent);
+            transform: rotate(45deg);
+            box-shadow: 0 0 10px var(--accent);
+        }
+
+        /* ===== SECTION BASE ===== */
+        section { padding: 8rem 5rem; position: relative; }
+        .section-label {
+            display: inline-flex; align-items: center; gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .section-label-num {
+            font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em;
+            color: var(--accent); font-variant-numeric: tabular-nums;
+        }
+        .section-label-line { width: 30px; height: 1px; background: var(--accent); opacity: 0.5; }
+        .section-label-text {
+            font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;
+            color: var(--gray);
+        }
+        .section-title-main {
+            font-family: var(--sans); font-weight: 200;
+            font-size: clamp(2rem, 4vw, 4rem);
+            line-height: 1.1; color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+        .section-title-main em {
+            font-family: var(--serif); font-style: italic; font-weight: 400;
+            color: var(--accent-light);
+        }
+
+        /* ===== AMBIENT BG TEXT ===== */
+        .ambient-text {
+            position: absolute; right: 3rem; top: 50%;
+            transform: translateY(-50%);
+            font-size: clamp(6rem, 14vw, 16rem);
+            font-weight: 800; letter-spacing: -0.04em;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255,255,255,0.03);
+            pointer-events: none; user-select: none;
+            line-height: 1;
+        }
+
+        /* ===== AMENITIES ===== */
+        .amenities { background: var(--black-soft); }
+        .amenities-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr);
+            gap: 2px; margin-top: 4rem;
+        }
+        .amenity-item {
+            background: var(--black-card);
+            padding: 2.5rem 2rem;
+            display: flex; flex-direction: column; align-items: flex-start; gap: 1rem;
+            transition: background 0.3s ease;
+            cursor: default;
+        }
+        .amenity-item:hover { background: rgba(17,17,24,0.8); }
+        .amenity-icon {
+            width: 48px; height: 48px;
+            border-radius: 50%;
+            background: var(--accent-glow);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.3rem; color: var(--accent-light);
+            transition: all 0.3s ease;
+        }
+        .amenity-item:hover .amenity-icon {
+            background: rgba(157, 78, 221, 0.25);
+            box-shadow: 0 0 20px var(--accent-glow);
+        }
+        .amenity-name { font-size: 0.95rem; font-weight: 500; color: var(--white); }
+        .amenity-detail { font-size: 0.78rem; color: var(--gray); line-height: 1.4; }
+
+        /* ===== GALLERY ===== */
+        .gallery { background: var(--black); overflow: hidden; }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: 300px 300px;
+            gap: 3px; margin-top: 4rem;
+        }
+        .gallery-item { overflow: hidden; position: relative; cursor: pointer; }
+        .gallery-item-main { grid-row: 1 / 3; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; }
+        .gallery-item:hover img { transform: scale(1.06); }
+        .gallery-item-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(5,5,5,0.6) 0%, transparent 50%);
+            opacity: 0; transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover .gallery-item-overlay { opacity: 1; }
+        .gallery-more {
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+            color: var(--gray); background: rgba(17,17,24,0.9);
+            gap: 0.5rem; transition: all 0.3s ease;
+        }
+        .gallery-more:hover { color: var(--accent-light); background: rgba(17,17,24,1); }
+
+        /* ===== PRICING ===== */
+        .pricing { background: var(--black-soft); }
+        .pricing-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 2px; margin-top: 4rem;
+        }
+        .pricing-card {
+            background: var(--black-card);
+            padding: 3.5rem 3rem;
+            position: relative; overflow: hidden;
+        }
+        .pricing-card::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+        }
+        .pricing-card.featured::before {
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+        .pricing-card.featured { background: rgba(17,17,8,0.95); }
+        .pricing-period {
+            font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;
+            color: var(--gray); margin-bottom: 0.8rem;
+        }
+        .pricing-days { font-size: 1rem; font-weight: 500; color: var(--white); margin-bottom: 2.5rem; }
+        .pricing-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.2rem; }
+        .pricing-duration {
+            font-size: 0.8rem; color: var(--gray-light);
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+        .pricing-duration::before {
+            content: ''; width: 20px; height: 1px; background: rgba(255,255,255,0.15);
+        }
+        .pricing-value { font-size: 1.8rem; font-weight: 300; color: var(--white); }
+        .pricing-value span { font-size: 0.8rem; font-weight: 400; color: var(--gray); margin-right: 0.2rem; }
+        .pricing-card.featured .pricing-value { color: var(--gold-light); }
+        .pricing-note {
+            margin-top: 2rem; padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.72rem; color: var(--gray); line-height: 1.6;
+        }
+        .pricing-note strong { color: var(--accent-light); }
+
+        /* ===== BOOKING ===== */
+        .booking {
+            background: var(--black);
+            text-align: center;
+        }
+        .booking-inner { max-width: 700px; margin: 0 auto; }
+        .booking-tagline {
+            font-family: var(--serif); font-style: italic;
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            color: var(--white-dim); margin-bottom: 3rem;
+            line-height: 1.4;
+        }
+        .booking-tagline strong { font-style: normal; font-weight: 400; color: var(--accent-light); }
+        .booking-actions { display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+        .btn-wpp {
+            display: inline-flex; align-items: center; gap: 0.8rem;
+            padding: 1rem 2.5rem;
+            background: #075E54;
+            color: #fff;
+            font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(7, 94, 84, 0.4);
+        }
+        .btn-wpp:hover { background: #128C7E; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(7, 94, 84, 0.5); }
+        .btn-phone {
+            display: inline-flex; align-items: center; gap: 0.8rem;
+            padding: 1rem 2.5rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--white);
+            font-size: 0.75rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        .btn-phone:hover { border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.03); }
+        .booking-disclaimer { margin-top: 2rem; font-size: 0.72rem; color: var(--gray); }
+        .booking-disclaimer strong { color: var(--accent-light); }
+
+        /* ===== FOOTER MINI ===== */
+        .footer-mini {
+            padding: 2.5rem 5rem;
+            border-top: 1px solid rgba(255,255,255,0.04);
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .footer-mini p { font-size: 0.72rem; color: var(--gray); }
+
+        /* ===== DOT PATTERN ===== */
+        .dot-pattern {
+            position: absolute; inset: 0; pointer-events: none;
+            background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        /* ===== LIGHTBOX ===== */
+        .lightbox {
+            position: fixed; inset: 0; z-index: 1000;
+            background: rgba(5,5,5,0.97);
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
+        }
+        .lightbox.open { opacity: 1; pointer-events: all; }
+        .lightbox-img { max-width: 90vw; max-height: 90vh; object-fit: contain; }
+        .lightbox-close {
+            position: absolute; top: 2rem; right: 2rem;
+            width: 44px; height: 44px;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; font-size: 1.2rem; color: var(--gray);
+            transition: all 0.3s ease;
+        }
+        .lightbox-close:hover { color: var(--white); border-color: rgba(255,255,255,0.3); }
+        .lightbox-arrows {
+            position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+            display: flex; gap: 1rem;
+        }
+        .lightbox-btn {
+            width: 44px; height: 44px;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; color: var(--gray);
+            transition: all 0.3s ease; background: none;
+        }
+        .lightbox-btn:hover { color: var(--white); border-color: rgba(255,255,255,0.3); }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav id="nav">
+        <a class="nav-logo" href="index.html">FIESTA <span>MOTEL</span></a>
+        <a class="nav-back" href="index.html">
+            <span class="iconify" data-icon="solar:arrow-left-linear"></span>
+            Voltar ao início
+        </a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%20-%2061-20260323T174027Z-3-001/Escolhidas%20para%20o%20site/Foto%20panoramica%20hidro%20cinema%2061%202.png" alt="Suíte Cinema — Fiesta Motel">
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-breadcrumb">
+                <span>Fiesta Motel</span>
+                <span class="sep">/</span>
+                <span>Suítes</span>
+                <span class="sep">/</span>
+                <span style="color: var(--white);">Cinema</span>
+            </div>
+            <div class="hero-suite-tag">
+                <div class="hero-suite-tag-line"></div>
+                <span class="hero-suite-tag-text">Experiência Exclusiva</span>
+            </div>
+            <h1 class="hero-title">Suíte<br><strong>Cinema</strong></h1>
+            <p class="hero-subtitle">Foco em entretenimento e imersão</p>
+            <div class="hero-cta-row">
+                <a class="btn-gold" href="https://wa.me/5561992827596?text=Olá!%20Gostaria%20de%20reservar%20a%20Suíte%20Premium" target="_blank">
+                    <span class="iconify" data-icon="solar:calendar-bold"></span>
+                    Reservar Agora
+                </a>
+                <div class="hero-price-chip">
+                    A partir de<br>
+                    <strong>R$ 199</strong> / 2h
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- SOBRE A SUÍTE -->
+    <section class="about-suite" style="background: var(--black); padding: 7rem 5rem;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;">
+            <div>
+                <div class="section-label reveal">
+                    <span class="section-label-num">01</span>
+                    <div class="section-label-line"></div>
+                    <span class="section-label-text">A Experiência</span>
+                </div>
+                <h2 class="section-title-main reveal">Não é apenas uma suíte.<br><em>É um mundo à parte.</em></h2>
+                <p class="reveal" style="color: var(--gray-light); font-size: 1.05rem; font-weight: 300; line-height: 1.85; margin-top: 1.8rem;">Suíte temática com foco absoluto em entretenimento e imersão. <strong>Atenção: A Suíte Cinema possui duas opções de plantas diferentes (61 e 33).</strong> Ambas possuem exatamente as mesmas comodidades e padrão de luxo, variando apenas o layout do ambiente.</p>
+                <p class="reveal" style="color: var(--gray-light); font-size: 1.05rem; font-weight: 300; line-height: 1.85; margin-top: 1.2rem;">Experimente o cinema dentro da suíte, com sistema Home Theater, streaming com lançamentos, hidromassagem moderna e muito mais.</p>
+                <p class="reveal" style="color: var(--gray); font-size: 0.95rem; font-weight: 300; line-height: 1.7; margin-top: 1.2rem; font-style: italic;">&ldquo;Uma experiência cinematográfica incomparável.&rdquo;</p>
+            </div>
+            <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3px;">
+                <div style="overflow: hidden; height: 260px; grid-column: 1 / 3;">
+                    <img src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%20-%2061-20260323T174027Z-3-001/Escolhidas%20para%20o%20site/Foto%20panoramica%20hidro%20cinema%2061%202.png" alt="Sala da Suíte Cinema" style="width:100%; height:100%; object-fit:cover; transition: transform 0.8s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div style="overflow: hidden; height: 200px;">
+                    <img src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%20-%2061-20260323T174027Z-3-001/Escolhidas%20para%20o%20site/Foto%20panoramica%20cama%20cinema%2061%202.png" alt="Cama da Suíte Cinema" style="width:100%; height:100%; object-fit:cover; transition: transform 0.8s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div style="overflow: hidden; height: 200px;">
+                    <img src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%20-%2061-20260323T174027Z-3-001/Escolhidas%20para%20o%20site/Foto%20panoramica%20parede%20cinema%2061.png" alt="Detalhe Suíte Cinema" style="width:100%; height:100%; object-fit:cover; transition: transform 0.8s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- AMENIDADES -->
+    <section class="amenities">
+        <div class="dot-pattern"></div>
+        <div class="ambient-text">CINEMA</div>
+
+        <div class="section-label reveal">
+            <span class="section-label-num">02</span>
+            <div class="section-label-line"></div>
+            <span class="section-label-text">Comodidades</span>
+        </div>
+        <h2 class="section-title-main reveal">Tudo o que você <em>merece</em></h2>
+        <p class="reveal" style="color: var(--gray); font-size: 1rem; font-weight: 300; margin-top: 0.8rem; max-width: 500px; line-height: 1.7;">Dois ambientes completamente equipados para transformar cada visita em uma experiência inesquecível.</p>
+
+        <div class="amenities-grid" style="grid-template-columns: repeat(4, 1fr);">
+
+            <div class="amenity-item reveal">
+                <div class="amenity-icon"><span class="iconify" data-icon="solar:tv-bold"></span></div>
+                <div class="amenity-name">Tela de 150''</div>
+                <div class="amenity-detail">Tela gigante com Home Theater.</div>
+            </div>
+            <div class="amenity-item reveal">
+                <div class="amenity-icon"><span class="iconify" data-icon="solar:play-circle-bold"></span></div>
+                <div class="amenity-name">Streaming Lançamentos</div>
+                <div class="amenity-detail">Seus filmes e séries favoritos.</div>
+            </div>
+            <div class="amenity-item reveal">
+                <div class="amenity-icon"><span class="iconify" data-icon="solar:home-bold"></span></div>
+                <div class="amenity-name">2 Ambientes</div>
+                <div class="amenity-detail">Espaço amplo e dividido.</div>
+            </div>
+            <div class="amenity-item reveal">
+                <div class="amenity-icon"><span class="iconify" data-icon="solar:bath-bold"></span></div>
+                <div class="amenity-name">Hidromassagem</div>
+                <div class="amenity-detail">Hidromassagem moderna.</div>
+            </div>
+            <div class="amenity-item reveal">
+                <div class="amenity-icon"><span class="iconify" data-icon="solar:wind-bold"></span></div>
+                <div class="amenity-name">2 Ar-condicionados</div>
+                <div class="amenity-detail">Um split por ambiente.</div>
+            </div>
+            <div class="amenity-item reveal">
+                <div class="amenity-icon"><span class="iconify" data-icon="solar:boombox-bold"></span></div>
+                <div class="amenity-name">Som Bluetooth</div>
+                <div class="amenity-detail">Conectividade fácil e rápida.</div>
+            </div>
+            <div class="amenity-item reveal">
+                <div class="amenity-icon"><span class="iconify" data-icon="mdi:shopping"></span></div>
+                <div class="amenity-name">Sex Shop no Quarto</div>
+                <div class="amenity-detail">Produtos à sua disposição.</div>
+            </div>
+            <div class="amenity-item reveal">
+                <div class="amenity-icon"><span class="iconify" data-icon="mdi:car"></span></div>
+                <div class="amenity-name">Garagem Privativa</div>
+                <div class="amenity-detail">Exclusividade na entrada.</div>
+            </div>
+        </div>
+    
+</section>
+
+    <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- GALERIA -->
+    
+    
+    
+    <section class="gallery" id="galeria">
+        <div class="section-label reveal">
+            <span class="section-label-num">02</span>
+            <div class="section-label-line"></div>
+            <span class="section-label-text">Galeria</span>
+        </div>
+        <h2 class="section-title-main reveal">Dois modelos, <em>o mesmo luxo</em></h2>
+        <p class="reveal" style="color: var(--gray); font-size: 0.95rem; margin-top: 1rem; margin-bottom: 3rem;">Separamos as fotos por planta para que você possa conferir cada detalhe.</p>
+
+        <h3 class="reveal" style="color: var(--gold-light); margin-bottom: 1.5rem; font-family: var(--sans); font-weight: 300; letter-spacing: 0.1em; text-transform: uppercase;">Suíte Cinema 61</h3>
+        <div class="gallery-grid" style="margin-top: 0; margin-bottom: 5rem;">
+
+            <div class="gallery-item gallery-item-main" onclick="openLightbox(0)">
+                <img src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%20-%2061-20260323T174027Z-3-001/Escolhidas%20para%20o%20site/Foto%20panoramica%20hidro%20cinema%2061%202.png" alt="Suíte Cinema 61">
+                <div class="gallery-item-overlay"></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(1)">
+                <img src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%20-%2061-20260323T174027Z-3-001/Escolhidas%20para%20o%20site/Foto%20panoramica%20cama%20cinema%2061%202.png" alt="Suíte Cinema 61">
+                <div class="gallery-item-overlay"></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(2)">
+                <img src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%20-%2061-20260323T174027Z-3-001/Escolhidas%20para%20o%20site/Foto%20panoramica%20parede%20cinema%2061.png" alt="Suíte Cinema 61">
+                <div class="gallery-item-overlay"></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(3)">
+                <img src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%20-%2061-20260323T174027Z-3-001/Escolhidas%20para%20o%20site/Foto%20vertical%20hidro%20cinema%2061%203.png" alt="Suíte Cinema 61">
+                <div class="gallery-item-overlay"></div>
+            </div>
+        </div>
+
+        <h3 class="reveal" style="color: var(--gold-light); margin-bottom: 1.5rem; font-family: var(--sans); font-weight: 300; letter-spacing: 0.1em; text-transform: uppercase;">Suíte Cinema 33</h3>
+        <div class="gallery-grid" style="margin-top: 0;">
+
+            <div class="gallery-item gallery-item-main" onclick="openLightbox(4)">
+                <img src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%2033-20260416T163233Z-3-001/Escolhidas%20para%20o%20site/20260402_154442.jpg" alt="Suíte Cinema 33">
+                <div class="gallery-item-overlay"></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(5)">
+                <img src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%2033-20260416T163233Z-3-001/Escolhidas%20para%20o%20site/20260402_154100.jpg" alt="Suíte Cinema 33">
+                <div class="gallery-item-overlay"></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(6)">
+                <img src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%2033-20260416T163233Z-3-001/Escolhidas%20para%20o%20site/20260402_154152.jpg" alt="Suíte Cinema 33">
+                <div class="gallery-item-overlay"></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(7)">
+                <img src="file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%2033-20260416T163233Z-3-001/Escolhidas%20para%20o%20site/20260402_154334.jpg" alt="Suíte Cinema 33">
+                <div class="gallery-item-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- PREÇOS -->
+    <section class="pricing">
+        <div class="dot-pattern"></div>
+        <div class="ambient-text">PREÇOS</div>
+
+        <div class="section-label reveal">
+            <span class="section-label-num">03</span>
+            <div class="section-label-line"></div>
+            <span class="section-label-text">Tabela de Preços</span>
+        </div>
+        <h2 class="section-title-main reveal">Escolha o seu <em>momento</em></h2>
+        <p class="reveal" style="color: var(--gray); font-size: 0.85rem; margin-top: 0.5rem; margin-bottom: 0;">*Pernoite (23h–06h) cobrado como 4 horas em qualquer noche.</p>
+
+        <div class="pricing-grid">
+            <div class="pricing-card reveal">
+                <p class="pricing-period">Dia da semana</p>
+                <p class="pricing-days">Domingo a Quarta-feira</p>
+                <div class="pricing-row">
+                    <span class="pricing-duration">2 horas</span>
+                    <span class="pricing-value"><span>R$</span> 199</span>
+                </div>
+                <div class="pricing-row">
+                    <span class="pricing-duration">4 horas</span>
+                    <span class="pricing-value"><span>R$</span> 269</span>
+                </div>
+                <p class="pricing-note">Melhor opção para a semana. Comodidades completas pelo <strong>melhor preço</strong>.</p>
+            </div>
+            <div class="pricing-card featured reveal">
+                <p class="pricing-period">Final de semana & Feriados</p>
+                <p class="pricing-days">Quinta a Sábado + Feriados</p>
+                <div class="pricing-row">
+                    <span class="pricing-duration">2 horas</span>
+                    <span class="pricing-value"><span>R$</span> 249</span>
+                </div>
+                <div class="pricing-row">
+                    <span class="pricing-duration">4 horas</span>
+                    <span class="pricing-value"><span>R$</span> 299</span>
+                </div>
+                <p class="pricing-note">Reserve com antecedência pelo WhatsApp. <strong>Disponibilidade limitada</strong> nos finais de semana.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- RESERVA -->
+    <section class="booking">
+        <div class="booking-inner">
+            <div class="section-label reveal" style="justify-content: center;">
+                <span class="section-label-num">04</span>
+                <div class="section-label-line"></div>
+                <span class="section-label-text">Reservas</span>
+            </div>
+            <p class="booking-tagline reveal">
+                Seu próximo momento especial<br>começa com <strong>uma mensagem</strong>.
+            </p>
+            <div class="booking-actions reveal">
+                <a class="btn-wpp" href="https://wa.me/5561992827596?text=Olá!%20Gostaria%20de%20reservar%20a%20Suíte%20Premium" target="_blank">
+                    <span class="iconify" data-icon="ic:baseline-whatsapp"></span>
+                    Reservar via WhatsApp
+                </a>
+                <a class="btn-phone" href="tel:+556133726060">
+                    <span class="iconify" data-icon="solar:phone-bold"></span>
+                    (61) 3372-6060
+                </a>
+            </div>
+            <p class="booking-disclaimer reveal">
+                Pernoite das 23h às 06h (7h de duração) pelo preço de <strong>4 horas</strong>.<br>
+                Entrada discreta com garagem privativa inclusa.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER MINI -->
+    <footer class="footer-mini">
+        <p>© 2026 Fiesta Brasília Motel — Sagocan BR-070 Km 05, Taguatinga Norte</p>
+        <a href="index.html" style="font-size: 0.72rem; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.3s;">Ver todas as suítes →</a>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightboxDirect()">✕</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        <div class="lightbox-arrows">
+            <button class="lightbox-btn" onclick="lightboxNav(-1)"><span class="iconify" data-icon="solar:arrow-left-linear"></span></button>
+            <button class="lightbox-btn" onclick="lightboxNav(1)"><span class="iconify" data-icon="solar:arrow-right-linear"></span></button>
+        </div>
+    </div>
+
+    <script>
+        // Nav scroll
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 80);
+        });
+
+        // Reveal observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('active'); observer.unobserve(e.target); } });
+        }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+        document.querySelectorAll('.reveal, .reveal-left').forEach(el => observer.observe(el));
+
+        // Lightbox
+        const photos = [
+'file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%20-%2061-20260323T174027Z-3-001/Escolhidas%20para%20o%20site/Foto%20panoramica%20hidro%20cinema%2061%202.png',
+'file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%20-%2061-20260323T174027Z-3-001/Escolhidas%20para%20o%20site/Foto%20panoramica%20cama%20cinema%2061%202.png',
+'file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%20-%2061-20260323T174027Z-3-001/Escolhidas%20para%20o%20site/Foto%20panoramica%20parede%20cinema%2061.png',
+'file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%20-%2061-20260323T174027Z-3-001/Escolhidas%20para%20o%20site/Foto%20vertical%20hidro%20cinema%2061%203.png',
+'file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%2033-20260416T163233Z-3-001/Escolhidas%20para%20o%20site/20260402_154442.jpg',
+'file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%2033-20260416T163233Z-3-001/Escolhidas%20para%20o%20site/20260402_154100.jpg',
+'file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%2033-20260416T163233Z-3-001/Escolhidas%20para%20o%20site/20260402_154152.jpg',
+'file:///E:/Motel%20Fiesta/2026/Su%C3%ADte%20Cinema%2033-20260416T163233Z-3-001/Escolhidas%20para%20o%20site/20260402_154334.jpg'
+];
+        let currentIdx = 0;
+
+        function openLightbox(idx) {
+            currentIdx = idx;
+            document.getElementById('lightbox-img').src = photos[currentIdx];
+            document.getElementById('lightbox').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightboxDirect() {
+            document.getElementById('lightbox').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+        function closeLightbox(e) {
+            if (e.target === document.getElementById('lightbox')) closeLightboxDirect();
+        }
+        function lightboxNav(dir) {
+            currentIdx = (currentIdx + dir + photos.length) % photos.length;
+            document.getElementById('lightbox-img').src = photos[currentIdx];
+        }
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeLightboxDirect();
+            if (e.key === 'ArrowRight') lightboxNav(1);
+            if (e.key === 'ArrowLeft') lightboxNav(-1);
+        });
+    </script>
+</body>
+</html>
