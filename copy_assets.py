@@ -13,9 +13,8 @@ def copy_and_update_assets():
     html_files = [f for f in os.listdir(site_dir) if f.endswith('.html')]
     
     # regex to find file:///E:... 
-    # it can be in src="file:///..." or url('file:///...')
-    # we need to be careful with quotes and spaces.
-    pattern = re.compile(r'file:///E:/[A-Za-z0-9_\-\.%/]+', re.IGNORECASE)
+    # Match until a quote mark
+    pattern = re.compile(r'file:///E:/[^"\'<>]+', re.IGNORECASE)
     
     for filename in html_files:
         filepath = os.path.join(site_dir, filename)

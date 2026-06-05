@@ -77,8 +77,8 @@
         .hero-overlay {
             position: absolute; inset: 0;
             background:
-                linear-gradient(to right, rgba(5,5,5,0.85) 0%, rgba(5,5,5,0.5) 55%, transparent 100%),
-                linear-gradient(to top, #050505 0%, rgba(5,5,5,0.6) 35%, transparent 65%);
+                linear-gradient(to right, rgba(5,5,5,0.65) 0%, rgba(5,5,5,0.3) 55%, transparent 100%),
+                linear-gradient(to top, #050505 0%, rgba(5,5,5,0.3) 35%, transparent 65%);
         }
         .hero-content {
             position: relative; z-index: 10;
@@ -371,23 +371,52 @@
             transition: all 0.3s ease; background: none;
         }
         .lightbox-btn:hover { color: var(--white); border-color: rgba(255,255,255,0.3); }
+    
+        /* Nav Links */
+        .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+        .nav-links a { font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); transition: color 0.3s ease; position: relative; }
+        .nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0%; height: 1px; background: var(--accent); transition: width 0.3s ease; }
+        .nav-links a:hover { color: var(--white); }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta { padding: 0.8rem 1.5rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 2px; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--white); transition: all 0.3s ease; }
+        .nav-cta:hover { background: var(--white); color: var(--black); }
+        @media (max-width: 900px) { .nav-links { display: none; } .nav-cta { display: none; } }
+
     </style>
 </head>
 <body>
 
     <!-- NAV -->
-    <nav id="nav">
-        <a class="nav-logo" href="index.html">FIESTA <span>MOTEL</span></a>
-        <a class="nav-back" href="index.html">
-            <span class="iconify" data-icon="solar:arrow-left-linear"></span>
-            Voltar ao início
+        <!-- NAV -->
+        <!-- NAV -->
+    <nav class="nav scrolled" id="nav" style="background: rgba(5,5,5,0.95); padding: 1rem 3rem;">
+        <a class="nav-logo" href="index.html">
+            FIESTA <span class="title-stroke">MOTEL</span>
         </a>
+                <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#suites">Suítes</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="sexshop.html">Sex Shop</a></li>
+        </ul>
+        <a class="nav-cta" href="https://wa.me/556133726060?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank">Reservar Agora</a>
+     <div class="mobile-menu-btn" onclick="toggleMobileMenu()"><span class="iconify" data-icon="solar:hamburger-menu-linear"></span></div>
     </nav>
+
+    <!-- MOBILE MENU -->
+        <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="toggleMobileMenu()">Home</a>
+        <a href="index.html#suites" onclick="toggleMobileMenu()">Suítes</a>
+        <a href="cardapio.html" onclick="toggleMobileMenu()">Cardápio</a>
+        <a href="sexshop.html" onclick="toggleMobileMenu()">Sex Shop</a>
+        <a href="https://wa.me/556133726060?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." style="margin-top:2rem; font-size:1rem; padding: 1rem 2rem; border: 1px solid var(--accent); color: var(--accent-light);" target="_blank" onclick="toggleMobileMenu()">Reservar Agora</a>
+    </div>
+
 
     <!-- HERO -->
     <section class="hero" id="home">
         <div class="hero-bg">
-            <img src="file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_140521.jpg" alt="Suíte Bali — Fiesta Motel">
+            <img src="assets/site_images/20260416_140521.jpg" alt="Suíte Bali — Fiesta Motel">
         </div>
         <div class="hero-overlay"></div>
 
@@ -440,13 +469,13 @@
             </div>
             <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3px;">
                 <div style="overflow: hidden; height: 260px; grid-column: 1 / 3;">
-                    <img src="file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_140603.jpg" alt="Sala da Suíte Premium" style="width:100%; height:100%; object-fit:cover; transition: transform 0.8s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+                    <img src="assets/site_images/20260416_140603.jpg" alt="Sala da Suíte Premium" style="width:100%; height:100%; object-fit:cover; transition: transform 0.8s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
                 </div>
                 <div style="overflow: hidden; height: 200px;">
-                    <img src="file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141033.jpg" alt="Copa da Suíte Premium" style="width:100%; height:100%; object-fit:cover; transition: transform 0.8s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+                    <img src="assets/site_images/20260416_141033.jpg" alt="Copa da Suíte Premium" style="width:100%; height:100%; object-fit:cover; transition: transform 0.8s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
                 </div>
                 <div style="overflow: hidden; height: 200px;">
-                    <img src="file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141052.jpg" alt="Hidromassagem Suíte Premium" style="width:100%; height:100%; object-fit:cover; transition: transform 0.8s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+                    <img src="assets/site_images/20260416_141052.jpg" alt="Hidromassagem Suíte Premium" style="width:100%; height:100%; object-fit:cover; transition: transform 0.8s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
                 </div>
             </div>
         </div>
@@ -534,19 +563,19 @@
 
         <div class="gallery-grid">
             <div class="gallery-item gallery-item-main" onclick="openLightbox(0)">
-                <img src="file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141138.jpg" alt="Suíte Premium">
+                <img src="assets/site_images/20260416_141138.jpg" alt="Suíte Premium">
                 <div class="gallery-item-overlay"></div>
             </div>
             <div class="gallery-item" onclick="openLightbox(1)">
-                <img src="file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141211.jpg" alt="Hidromassagem Premium">
+                <img src="assets/site_images/20260416_141211.jpg" alt="Hidromassagem Premium">
                 <div class="gallery-item-overlay"></div>
             </div>
             <div class="gallery-item" onclick="openLightbox(2)">
-                <img src="file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141232.jpg" alt="Área de Relaxamento">
+                <img src="assets/site_images/20260416_141232.jpg" alt="Área de Relaxamento">
                 <div class="gallery-item-overlay"></div>
             </div>
             <div class="gallery-item" onclick="openLightbox(3)">
-                <img src="file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141357.jpg" alt="Ambiente Sala">
+                <img src="assets/site_images/20260416_141357.jpg" alt="Ambiente Sala">
                 <div class="gallery-item-overlay"></div>
             </div>
             <div class="gallery-item gallery-more" onclick="openLightbox(4)">
@@ -670,21 +699,21 @@
 
         // Lightbox
         const photos = [
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_140521.jpg',
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_140603.jpg',
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141033.jpg',
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141052.jpg',
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141138.jpg',
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141211.jpg',
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141232.jpg',
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141357.jpg',
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141408.jpg',
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141429.jpg',
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141449.jpg',
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141532.jpg',
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141553.jpg',
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141650.jpg',
-            'file:///E:/Motel Fiesta/2026/Suíte Bali 02-20260416T175525Z-3-001/Escolhidas para o Site/20260416_141731.jpg'
+            'assets/site_images/20260416_140521.jpg',
+            'assets/site_images/20260416_140603.jpg',
+            'assets/site_images/20260416_141033.jpg',
+            'assets/site_images/20260416_141052.jpg',
+            'assets/site_images/20260416_141138.jpg',
+            'assets/site_images/20260416_141211.jpg',
+            'assets/site_images/20260416_141232.jpg',
+            'assets/site_images/20260416_141357.jpg',
+            'assets/site_images/20260416_141408.jpg',
+            'assets/site_images/20260416_141429.jpg',
+            'assets/site_images/20260416_141449.jpg',
+            'assets/site_images/20260416_141532.jpg',
+            'assets/site_images/20260416_141553.jpg',
+            'assets/site_images/20260416_141650.jpg',
+            'assets/site_images/20260416_141731.jpg'
         ];
         let currentIdx = 0;
 
@@ -711,5 +740,13 @@
             if (e.key === 'ArrowLeft') lightboxNav(-1);
         });
     </script>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            if(menu) menu.classList.toggle('active');
+        }
+    </script>
 </body>
+
 </html>

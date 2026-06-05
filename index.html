@@ -8,7 +8,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     
     <link href="style.css" rel="stylesheet"/>
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
@@ -23,19 +23,29 @@
     <div class="ambient-glow glow-dark"></div>
 
     <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <a class="nav-logo" href="#">
+        <nav class="nav" id="nav">
+        <a class="nav-logo" href="index.html#home">
             FIESTA <span class="title-stroke">MOTEL</span>
         </a>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#suites">Suítes Premium</a></li>
+                <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#suites">Suítes</a></li>
             <li><a href="cardapio.html">Cardápio</a></li>
-            <li><a href="#experiencias">Experiências</a></li>
-            <li><a href="#gastronomia">Gastronomia</a></li>
+            <li><a href="sexshop.html">Sex Shop</a></li>
         </ul>
-        <a class="nav-cta" href="#">Reservar Agora</a>
+        <a class="nav-cta" href="https://wa.me/556133726060?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank">Reservar Agora</a>
+     <div class="mobile-menu-btn" onclick="toggleMobileMenu()"><span class="iconify" data-icon="solar:hamburger-menu-linear"></span></div>
     </nav>
+
+    <!-- MOBILE MENU -->
+        <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html#home" onclick="toggleMobileMenu()">Home</a>
+        <a href="index.html#suites" onclick="toggleMobileMenu()">Suítes</a>
+        <a href="cardapio.html" onclick="toggleMobileMenu()">Cardápio</a>
+        <a href="sexshop.html" onclick="toggleMobileMenu()">Sex Shop</a>
+        <a href="https://wa.me/556133726060?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." style="margin-top:2rem; font-size:1rem; padding: 1rem 2rem; border: 1px solid var(--accent); color: var(--accent-light);" target="_blank" onclick="toggleMobileMenu()">Reservar Agora</a>
+    </div>
+
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -76,7 +86,7 @@
     <section class="suites" id="suites">
         <div class="suites-inner">
             <div class="suites-header reveal">
-                <h2 class="section-title text-left mt-4" style="margin-bottom: 0;">SUÍTES<br/><span style="color: var(--accent-light);">EXCLUSIVAS</span></h2>
+                <h2 class="section-title text-center" style="margin-bottom: 3rem;">SUÍTES <span class="italic">EXCLUSIVAS</span></h2>
             </div>
             
             <div class="suites-grid">
@@ -97,7 +107,7 @@
                 <!-- 2. Suíte Premium -->
                 <div class="suite-card reveal delay-200">
                     <div class="suite-img-wrapper">
-                        <img alt="Suíte Premium" class="suite-img" src="assets/site_images/SPA_Premium_10_5_aconchegante.png"/>
+                        <img alt="Suíte Premium" class="suite-img" src="assets/site_images/SPA_Premium_10_2.png"/>
                     </div>
                     <div class="suite-info">
                         <div class="suite-meta">A PARTIR DE R$ 199 / 2H</div>
@@ -162,7 +172,7 @@
                 <!-- 7. Suíte Luxo -->
                 <div class="suite-card reveal delay-100">
                     <div class="suite-img-wrapper">
-                        <img alt="Suíte Luxo" class="suite-img" src="assets/site_images/20260402_170745.jpg"/>
+                        <img alt="Suíte Luxo" class="suite-img" src="assets/site_images/20260402_171104.jpg"/>
                     </div>
                     <div class="suite-info">
                         <div class="suite-meta">A PARTIR DE R$ 89 / 2H</div>
@@ -299,20 +309,36 @@
     </section>
 
     
-    <!-- Boutique Sensual (Sex Shop) -->
-    <section class="sexshop-section reveal" id="sexshop" style="background: var(--black-card); padding: 6rem 5rem; text-align: center; border-top: 1px solid rgba(157, 78, 221, 0.1);">
-        <div class="dot-pattern"></div>
-        <div style="max-width: 600px; margin: 0 auto; position: relative; z-index: 2;">
-            <span class="iconify" data-icon="solar:bag-heart-bold" style="font-size: 3.5rem; color: var(--accent-light); margin-bottom: 1.5rem; filter: drop-shadow(0 0 15px rgba(157,78,221,0.4));"></span>
-            <h2 class="section-title">BOUTIQUE <span class="italic">SENSUAL</span></h2>
-            <p style="color: var(--gray); font-size: 1.05rem; line-height: 1.7; margin-bottom: 2.5rem;">
-                Eleve sua experiência a outro nível. Solicite nosso catálogo erótico com total discrição direto na sua suíte. Trabalhamos com as melhores marcas, géis, acessórios e fantasias.
-            </p>
-            <a href="https://wa.me/5561992827596?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20o%20cat%C3%A1logo%20do%20Sex%20Shop%20na%20minha%20su%C3%ADte." target="_blank" class="btn-primary" style="background: var(--accent); border-color: var(--accent); color: var(--white); box-shadow: 0 0 20px rgba(157, 78, 221, 0.3);">
-                <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
-                <span>Solicitar Catálogo via WhatsApp</span>
-            </a>
+                <!-- Boutique Sensual (Sex Shop) -->
+    <section class="sexshop-section reveal" id="sexshop" style="background: var(--black); padding: 8rem 5rem; position: relative; border-top: 1px solid rgba(255,255,255,0.05); overflow: hidden;">
+        <div class="ambient-glow glow-purple" style="top: 50%; left: 10%;"></div>
+        <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 2;">
+            <div class="sexshop-image" style="border-radius: 8px; overflow: hidden; position: relative;">
+                <img src="assets/site_images/boutique_hero2.png" alt="Boutique Sensual" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 8px;">
+            </div>
+            
+            <div class="sexshop-content text-left">
+                <span class="iconify" data-icon="solar:bag-heart-bold" style="font-size: 3.5rem; color: var(--accent-light); margin-bottom: 1.5rem; filter: drop-shadow(0 0 15px rgba(157,78,221,0.4));"></span>
+                <h2 class="section-title text-left" style="margin-bottom: 1.5rem;">BOUTIQUE <span class="italic">SENSUAL</span></h2>
+                <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2.5rem; font-weight: 300;">
+                    Descubra nossa curadoria exclusiva de acessórios, géis e lingeries para elevar sua experiência a outro nível. Solicite com total discrição direto na sua suíte.
+                </p>
+                <a href="sexshop.html" class="btn-primary" style="background: var(--accent); border-color: var(--accent); color: var(--white); box-shadow: 0 0 20px rgba(157, 78, 221, 0.3); display: inline-flex;">
+                    <span class="iconify" data-icon="solar:bag-heart-bold" style="font-size: 1.2rem;"></span>
+                    <span>Explorar Catálogo</span>
+                </a>
+            </div>
         </div>
+        
+        <style>
+            @media (max-width: 900px) {
+                .sexshop-section > div { grid-template-columns: 1fr !important; text-align: center; }
+                .sexshop-content.text-left { text-align: center; }
+                .sexshop-content .section-title.text-left { text-align: center; font-size: 2.5rem !important; }
+                .sexshop-section { padding: 4rem 2rem !important; }
+                .sexshop-image { order: -1; margin-bottom: 2rem; max-height: 350px; }
+            }
+        </style>
     </section>
 
     <!-- Avaliações Google (A Voz dos Hóspedes) -->
@@ -581,6 +607,154 @@
     </section>
 
 
+    
+        <!-- Nova Sessão de Reservas -->
+    <style>
+        .booking-tagline {
+            font-family: 'Playfair Display', serif; font-style: italic;
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            color: var(--white-dim); margin-bottom: 3rem;
+            line-height: 1.4;
+        }
+        .booking-tagline strong { font-style: normal; font-weight: 400; color: var(--accent-light); }
+        .booking-actions { display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+        .btn-wpp {
+            display: inline-flex; align-items: center; gap: 0.8rem;
+            padding: 1rem 2.5rem;
+            background: #075E54;
+            color: #fff;
+            font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(7, 94, 84, 0.4);
+            border: 1px solid #075E54;
+        }
+        .btn-wpp:hover { background: #128C7E; border-color: #128C7E; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(7, 94, 84, 0.5); }
+        .btn-phone {
+            display: inline-flex; align-items: center; gap: 0.8rem;
+            padding: 1rem 2.5rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--white);
+            font-size: 0.75rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        .btn-phone:hover { border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.03); }
+        .booking-disclaimer { margin-top: 2rem; font-size: 0.72rem; color: var(--gray); }
+        .booking-disclaimer strong { color: var(--accent-light); }
+    </style>
+    <section class="booking reveal" style="background: var(--black-card); padding: 8rem 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div style="max-width: 800px; margin: 0 auto;">
+
+            <p class="booking-tagline">
+                Seu próximo momento especial<br>começa com <strong>uma mensagem</strong>.
+            </p>
+            <div class="booking-actions">
+                <a class="btn-wpp" href="https://wa.me/556133726060?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank">
+                    <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
+                    Reservar via WhatsApp
+                </a>
+                <a class="btn-phone" href="tel:6133726060">
+                    <span class="iconify" data-icon="solar:phone-bold" style="font-size: 1.2rem;"></span>
+                    (61) 3372-6060
+                </a>
+            </div>
+            <p class="booking-disclaimer">
+                Pernoite das 23h às 06h (7h de duração) pelo preço de <strong>4 horas</strong>.<br>
+                Entrada discreta com garagem privativa inclusa.
+            </p>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO / MAPA -->
+    <style>
+        .location-section {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            min-height: 400px;
+            overflow: hidden;
+            background: var(--black);
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        .map-container {
+            width: 100%;
+            height: 100%;
+            filter: grayscale(100%) contrast(1.1) brightness(0.8);
+            transition: filter 0.8s var(--ease-out-expo);
+        }
+        .location-section:hover .map-container {
+            filter: grayscale(0%) contrast(1) brightness(1);
+        }
+        .map-overlay-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none; /* Let clicks pass through to map */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            z-index: 10;
+            background: rgba(5,5,5,0.7);
+            padding: 2.5rem 3rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 4px;
+            backdrop-filter: blur(10px);
+            transition: opacity 0.5s ease;
+        }
+        .location-section:hover .map-overlay-content {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .map-overlay-content h3 {
+            font-family: var(--display);
+            font-size: 2rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.1em;
+        }
+        .map-overlay-content p {
+            color: var(--gray-light);
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+        }
+        .btn-route {
+            pointer-events: auto; /* Re-enable clicks for the button */
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.8rem 2rem;
+            background: var(--accent);
+            color: var(--white);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .btn-route:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+        }
+    </style>
+    <section class="location-section reveal">
+        <div class="map-container">
+            <iframe src="https://maps.google.com/maps?q=Fiesta%20Motel%20Taguatinga%20Brasilia&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="map-overlay-content">
+            <h3>COMO CHEGAR</h3>
+            <p>Sagocan BR-070 Km 05, Taguatinga Norte</p>
+            <a href="https://www.google.com/maps/dir//Fiesta+Motel/@-15.8078971,-48.0694186,15z" target="_blank" class="btn-route">
+                <span class="iconify" data-icon="solar:routing-2-bold" style="font-size: 1.2rem;"></span>
+                Traçar Rota
+            </a>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer reveal">
         <div class="footer-grid">
@@ -668,7 +842,8 @@
                 end: () => `+=${getScrollAmount()}`,
                 pin: true,
                 animation: tween,
-                scrub: 1, 
+                scrub: 1.5,
+                anticipatePin: 1,
                 invalidateOnRefresh: true, 
             });
             
@@ -678,5 +853,13 @@
             });
         }
     </script>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            if(menu) menu.classList.toggle('active');
+        }
+    </script>
 </body>
+
 </html>

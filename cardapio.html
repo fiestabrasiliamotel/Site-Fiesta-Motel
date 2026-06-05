@@ -251,13 +251,25 @@
         <a class="nav-logo" href="index.html">
             FIESTA <span class="title-stroke">MOTEL</span>
         </a>
-        <ul class="nav-links">
+                <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#suites">Suítes</a></li>
-            <li><a href="#" style="color: var(--white);">Cardápio</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="sexshop.html">Sex Shop</a></li>
         </ul>
         <a class="nav-cta" href="#">+ Pedir Item</a>
+     <div class="mobile-menu-btn" onclick="toggleMobileMenu()"><span class="iconify" data-icon="solar:hamburger-menu-linear"></span></div>
     </nav>
+
+    <!-- MOBILE MENU -->
+        <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="toggleMobileMenu()">Home</a>
+        <a href="index.html#suites" onclick="toggleMobileMenu()">Suítes</a>
+        <a href="cardapio.html" onclick="toggleMobileMenu()">Cardápio</a>
+        <a href="sexshop.html" onclick="toggleMobileMenu()">Sex Shop</a>
+        <a href="https://wa.me/556133726060?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." style="margin-top:2rem; font-size:1rem; padding: 1rem 2rem; border: 1px solid var(--accent); color: var(--accent-light);" target="_blank" onclick="toggleMobileMenu()">Reservar Agora</a>
+    </div>
+
 
     <!-- Hero -->
     <div class="menu-hero">
@@ -504,5 +516,13 @@
             observer.observe(section);
         });
     </script>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            if(menu) menu.classList.toggle('active');
+        }
+    </script>
 </body>
+
 </html>
