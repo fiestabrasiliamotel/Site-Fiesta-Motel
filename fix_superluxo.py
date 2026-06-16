@@ -7,7 +7,7 @@ index_path = r"E:\Motel Fiesta\2026\Site novo\index.html"
 
 preta_dir = r"E:\Motel Fiesta\2026\Super Luxo Preta - 54-20260323T180317Z-3-001\Escolhidas Site"
 branca_dir = r"E:\Motel Fiesta\2026\Suíte Super Luxo Branca 52-20260416T163401Z-3-001\Super Luxo Branca Escolhida para o site"
-laranja_dir = r"E:\Motel Fiesta\2026\Suite Super Luxo laranja 53-20260416T163437Z-3-001\Escolhidas Site"
+laranja_dir = r"E:\Motel Fiesta\Suite Super Luxo Laranja"
 
 def get_encoded_url(d, f):
     path = os.path.join(d, f).replace('\\', '/')
@@ -16,7 +16,7 @@ def get_encoded_url(d, f):
 # Select the photos for each model
 p_preta = ["20260319_162640.jpg", "20260319_162922.jpg", "20260319_162704.jpg", "20260319_162600.jpg"]
 p_branca = ["20260402_160802.jpg", "20260402_161747.jpg", "20260402_160637.jpg", "20260402_161806.jpg"]
-p_laranja = ["20260402_163634.jpg", "20260402_163722.jpg", "20260402_163504.jpg", "20260402_163839.jpg"]
+p_laranja = ["IMG_20250807_170320.jpg", "IMG_20250807_163949.jpg", "IMG_20250807_164051.jpg", "IMG_20250807_164531.jpg"]
 
 # Build the JS array with all photos
 all_photos = []

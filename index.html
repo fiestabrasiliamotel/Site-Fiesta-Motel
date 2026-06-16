@@ -27,23 +27,27 @@
         <a class="nav-logo" href="index.html#home">
             FIESTA <span class="title-stroke">MOTEL</span>
         </a>
-                <ul class="nav-links">
+                        <ul class="nav-links">
             <li><a href="index.html#home">Home</a></li>
             <li><a href="index.html#suites">Suítes</a></li>
+            <li><a href="index.html#promocoes">Promoções</a></li>
             <li><a href="cardapio.html">Cardápio</a></li>
             <li><a href="sexshop.html">Sex Shop</a></li>
+            <li><a href="index.html#localizacao">Como Chegar</a></li>
         </ul>
-        <a class="nav-cta" href="https://wa.me/556133726060?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank">Reservar Agora</a>
+        <a class="nav-cta" href="https://wa.me/5561992827596?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank">Reservar Agora</a>
      <div class="mobile-menu-btn" onclick="toggleMobileMenu()"><span class="iconify" data-icon="solar:hamburger-menu-linear"></span></div>
     </nav>
 
     <!-- MOBILE MENU -->
-        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu" id="mobileMenu">
         <a href="index.html#home" onclick="toggleMobileMenu()">Home</a>
         <a href="index.html#suites" onclick="toggleMobileMenu()">Suítes</a>
+        <a href="index.html#promocoes" onclick="toggleMobileMenu()">Promoções</a>
         <a href="cardapio.html" onclick="toggleMobileMenu()">Cardápio</a>
         <a href="sexshop.html" onclick="toggleMobileMenu()">Sex Shop</a>
-        <a href="https://wa.me/556133726060?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." style="margin-top:2rem; font-size:1rem; padding: 1rem 2rem; border: 1px solid var(--accent); color: var(--accent-light);" target="_blank" onclick="toggleMobileMenu()">Reservar Agora</a>
+        <a href="index.html#localizacao" onclick="toggleMobileMenu()">Como Chegar</a>
+        <a href="https://wa.me/5561992827596?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." style="margin-top:2rem; font-size:1rem; padding: 1rem 2rem; border: 1px solid var(--accent); color: var(--accent-light);" target="_blank" onclick="toggleMobileMenu()">Reservar Agora</a>
     </div>
 
 
@@ -183,6 +187,266 @@
                 </div>
                 
             </div>
+        </div>
+    </section>
+
+    <!-- Fachada e Localização Section -->
+    <section class="facade-location reveal" id="localizacao" style="background: var(--black-card); padding: 8rem 5rem; border-top: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden;">
+        <div class="ambient-glow glow-purple" style="top: 30%; right: 10%; opacity: 0.15;"></div>
+        <div style="max-width: 1200px; margin: 0 auto;">
+            
+            <div class="section-label reveal" style="margin-bottom: 3rem;">
+                <span class="section-label-num" style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; color: var(--accent-light);">[ 02 ]</span>
+                <span style="width: 30px; height: 1px; background: var(--accent-light); opacity: 0.5; display: inline-block; margin: 0 10px; vertical-align: middle;"></span>
+                <span class="section-label-text" style="font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray);">Localização e Fachada</span>
+            </div>
+
+            <div class="facade-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
+                <!-- Coluna Esquerda: Fachada -->
+                <div class="facade-image-wrapper reveal" style="border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); position: relative; box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
+                    <img src="assets/site_images/fachada.jpg" alt="Fachada do Fiesta Motel" style="width: 100%; height: 450px; object-fit: cover; transition: transform 0.8s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(5,5,5,0.8) 0%, transparent 50%); pointer-events: none;"></div>
+                    <div style="position: absolute; bottom: 1.5rem; left: 1.5rem;">
+                        <span style="color: var(--white); font-family: var(--display); font-size: 1.4rem; font-weight: 500; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Entrada Fiesta Motel</span>
+                        <p style="color: var(--accent-light); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,0.8);">Discrição & Segurança</p>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita: Endereço, GPS e Mini-mapa -->
+                <div class="facade-details reveal" style="display: flex; flex-direction: column; gap: 2rem;">
+                    <div>
+                        <h2 class="section-title text-left" style="margin-bottom: 1rem; font-size: clamp(2rem, 3vw, 3rem); line-height: 1.2;">COMO <span class="italic">CHEGAR</span></h2>
+                        <p style="color: var(--white-dim); font-size: 1.1rem; line-height: 1.6; font-weight: 300;">
+                            Estamos localizados na **Sagocan BR-070 Km 05, Taguatinga Norte — Brasília**.
+                        </p>
+                        <p style="color: var(--gray-light); font-size: 0.95rem; line-height: 1.6; font-weight: 300; margin-top: 0.5rem;">
+                            Estrutura planejada para uma entrada rápida, discreta e totalmente automatizada com garagens privativas.
+                        </p>
+                    </div>
+
+                    <!-- Botões GPS -->
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="https://www.google.com/maps/dir//Fiesta+Motel/@-15.8078971,-48.0694186,15z" target="_blank" class="btn-primary" style="padding: 1rem 2rem; font-size: 0.72rem; letter-spacing: 0.15em; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.8rem;">
+                            <span class="iconify" data-icon="solar:routing-2-bold" style="font-size: 1.2rem;"></span>
+                            Google Maps
+                        </a>
+                        <a href="https://waze.com/ul?ll=-15.8078971,-48.0694186&navigate=yes" target="_blank" class="btn-outline" style="padding: 1rem 2rem; font-size: 0.72rem; letter-spacing: 0.15em; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.8rem; border-color: rgba(255,255,255,0.15); background: rgba(255,255,255,0.02);">
+                            <span class="iconify" data-icon="simple-icons:waze" style="font-size: 1.2rem; color: #33ccff;"></span>
+                            Waze GPS
+                        </a>
+                    </div>
+
+                    <!-- Mini-mapa -->
+                    <div style="border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); height: 200px; box-shadow: 0 10px 25px rgba(0,0,0,0.4); filter: grayscale(100%) contrast(1.1) brightness(0.8); transition: filter 0.5s ease;" onmouseover="this.style.filter='grayscale(0%) contrast(1) brightness(1)'" onmouseout="this.style.filter='grayscale(100%) contrast(1.1) brightness(0.8)'">
+                        <iframe src="https://maps.google.com/maps?q=Fiesta%20Motel%20Taguatinga%20Brasilia&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <style>
+            @media (max-width: 900px) {
+                .facade-grid { grid-template-columns: 1fr !important; gap: 3rem !important; }
+                .facade-image-wrapper img { height: 300px !important; }
+            }
+        </style>
+    </section>
+
+    <!-- Promoções Section -->
+    <section class="promocoes reveal" id="promocoes" style="background: var(--black); padding: 8rem 5rem; border-top: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden;">
+        <div class="ambient-glow glow-purple" style="bottom: 10%; left: 5%; opacity: 0.12;"></div>
+        <div style="max-width: 1200px; margin: 0 auto;">
+            
+            <div class="section-label reveal" style="text-align: center; margin-bottom: 1.5rem; justify-content: center; display: flex;">
+                <span class="section-label-num" style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; color: var(--accent-light);">[ 03 ]</span>
+                <span style="width: 30px; height: 1px; background: var(--accent-light); opacity: 0.5; display: inline-block; margin: 0 10px; vertical-align: middle;"></span>
+                <span class="section-label-text" style="font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray);">Ofertas Especiais</span>
+            </div>
+            
+            <div style="text-align: center; margin-bottom: 5rem;" class="reveal">
+                <h2 class="section-title" style="margin-bottom: 1rem;">PROMOÇÕES <span class="italic">VIGENTES</span></h2>
+                <p style="color: var(--gray-light); font-size: 1.1rem; max-width: 600px; margin: 0 auto; font-weight: 300; line-height: 1.6;">
+                    Aproveite nossas condições exclusivas de hospedagem e gastronomia para tornar seu momento ainda mais completo e especial.
+                </p>
+            </div>
+
+            <!-- Grid de Promoções -->
+            <style>
+                .promo-grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 2.5rem;
+                }
+                .promo-card {
+                    background: rgba(17, 17, 24, 0.55);
+                    border: 1px solid rgba(255, 255, 255, 0.05);
+                    border-radius: 6px;
+                    padding: 2.5rem 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    transition: all 0.4s var(--ease-out-expo);
+                    backdrop-filter: blur(10px);
+                    position: relative;
+                }
+                .promo-card:hover {
+                    transform: translateY(-8px);
+                    border-color: rgba(199, 125, 255, 0.3);
+                    box-shadow: 0 15px 35px rgba(0,0,0,0.5), 0 0 25px rgba(157, 78, 221, 0.15);
+                    background: rgba(17, 17, 24, 0.8);
+                }
+                .promo-card.featured {
+                    border: 1px solid rgba(201, 168, 76, 0.2);
+                    background: rgba(20, 17, 12, 0.5);
+                }
+                .promo-card.featured:hover {
+                    border-color: rgba(232, 201, 122, 0.5);
+                    box-shadow: 0 15px 35px rgba(0,0,0,0.5), 0 0 25px rgba(201, 168, 76, 0.15);
+                    background: rgba(20, 17, 12, 0.75);
+                }
+                .promo-tag {
+                    display: inline-block;
+                    font-size: 0.65rem;
+                    font-weight: 700;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    padding: 0.4rem 0.8rem;
+                    border-radius: 3px;
+                    margin-bottom: 1.5rem;
+                    align-self: flex-start;
+                }
+                .tag-purple {
+                    background: rgba(157, 78, 221, 0.15);
+                    color: var(--accent-light);
+                    border: 1px solid rgba(157, 78, 221, 0.3);
+                }
+                .tag-gold {
+                    background: rgba(201, 168, 76, 0.15);
+                    color: var(--gold-light);
+                    border: 1px solid rgba(201, 168, 76, 0.3);
+                }
+                .promo-card-title {
+                    font-family: var(--display);
+                    font-size: 1.4rem;
+                    color: var(--white);
+                    margin-bottom: 1rem;
+                    font-weight: 500;
+                    line-height: 1.3;
+                }
+                .promo-card-desc {
+                    color: var(--gray-light);
+                    font-size: 0.88rem;
+                    line-height: 1.6;
+                    font-weight: 300;
+                    margin-bottom: 2rem;
+                    flex-grow: 1;
+                }
+                .promo-price {
+                    font-family: var(--sans);
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    margin-bottom: 1.5rem;
+                }
+                .promo-price span {
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    color: var(--gray-light);
+                }
+                
+                @media (max-width: 1000px) {
+                    .promo-grid { grid-template-columns: repeat(2, 1fr); }
+                }
+                @media (max-width: 700px) {
+                    .promo-grid { grid-template-columns: 1fr; }
+                    .promocoes { padding: 4rem 2rem !important; }
+                }
+            </style>
+            
+            <div class="promo-grid">
+                <!-- Promo 1: Tempo em Dobro -->
+                <div class="promo-card featured reveal">
+                    <span class="promo-tag tag-gold">Tempo em Dobro</span>
+                    <h3 class="promo-card-title">Tempo em Dobro na Suíte Luxo</h3>
+                    <p class="promo-card-desc">
+                        Aproveite mais tempo no motel! Válido de segunda a quarta-feira (exceto feriados): comprou 1h leva 2h, comprou 2h leva 4h ou comprou 4h leva 8h.
+                    </p>
+                    <div class="promo-price" style="color: var(--gold-light);">Luxo <span>Exclusivo</span></div>
+                    <a href="https://wa.me/5561992827596?text=Olá!%20Gostaria%20de%20aproveitar%20a%20Promoção%20Tempo%20em%20Dobro%20na%20Suíte%20Luxo." target="_blank" class="btn-primary" style="background: var(--gold); border-color: var(--gold); color: #1a1000; justify-content: center; box-shadow: 0 0 15px rgba(201,168,76,0.2); width: 100%; font-size: 0.72rem; padding: 0.8rem 1.5rem; font-weight: 700; border-radius: 4px;">
+                        <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
+                        Aproveitar Oferta
+                    </a>
+                </div>
+
+                <!-- Promo 2: 10h de Sossego -->
+                <div class="promo-card reveal">
+                    <span class="promo-tag tag-purple">Pernoite Especial</span>
+                    <h3 class="promo-card-title">10h de Sossego (Suíte Luxo)</h3>
+                    <p class="promo-card-desc">
+                        Pernoite estendido com 10 horas de permanência! Disponível de domingo a quarta-feira, com entrada flexível entre 22h e 6h. Garanta conforto com economia.
+                    </p>
+                    <div class="promo-price" style="color: var(--accent-light);">R$ 129,90 <span>/ 10h</span></div>
+                    <a href="https://wa.me/5561992827596?text=Olá!%20Gostaria%20de%20reservar%20a%20Promoção%2010h%20de%20Sossego%20na%20Suíte%20Luxo." target="_blank" class="btn-add" style="justify-content: center; border-color: var(--accent); color: var(--accent-light); width: 100%; font-size: 0.72rem; padding: 0.8rem 1.5rem; border-radius: 4px;">
+                        <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
+                        Reservar Agora
+                    </a>
+                </div>
+
+                <!-- Promo 3: Casal Burger -->
+                <div class="promo-card reveal">
+                    <span class="promo-tag tag-purple">Gastronomia</span>
+                    <h3 class="promo-card-title">Combo Casal Burger</h3>
+                    <p class="promo-card-desc">
+                        Dois hambúrgueres artesanais (blend da casa de 160g, queijo, bacon, alface e tomate no pão brioche selado com molho especial) servidos com 2 Coca-Colas em lata de 350ml.
+                    </p>
+                    <div class="promo-price" style="color: var(--accent-light);">R$ 59,90 <span>Combo</span></div>
+                    <a href="https://wa.me/5561992827596?text=Olá!%20Estou%20na%20suíte%20e%20gostaria%20de%20pedir%20o%20Combo%20Casal%20Burger%20em%20promoção." target="_blank" class="btn-add" style="justify-content: center; border-color: var(--accent); color: var(--accent-light); width: 100%; font-size: 0.72rem; padding: 0.8rem 1.5rem; border-radius: 4px;">
+                        <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
+                        Pedir na Suíte
+                    </a>
+                </div>
+
+                <!-- Promo 4: Dueto Fiesta Brasil -->
+                <div class="promo-card reveal">
+                    <span class="promo-tag tag-purple">Alta Gastronomia</span>
+                    <h3 class="promo-card-title">Dueto Fiesta Brasil</h3>
+                    <p class="promo-card-desc">
+                        Dois pratos completos pelo preço promocional! Deliciosos escalopes de contra-filé grelhados acompanhados de ovo frito, arroz branco, feijão, farofa e salada fresca.
+                    </p>
+                    <div class="promo-price" style="color: var(--accent-light);">R$ 59,90 <span>2 Pratos</span></div>
+                    <a href="https://wa.me/5561992827596?text=Olá!%20Estou%20na%20suíte%20e%20gostaria%20de%20pedir%20o%20Dueto%20Fiesta%20Brasil%20em%20promoção." target="_blank" class="btn-add" style="justify-content: center; border-color: var(--accent); color: var(--accent-light); width: 100%; font-size: 0.72rem; padding: 0.8rem 1.5rem; border-radius: 4px;">
+                        <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
+                        Pedir na Suíte
+                    </a>
+                </div>
+
+                <!-- Promo 5: Start Fiesta -->
+                <div class="promo-card reveal">
+                    <span class="promo-tag tag-purple">Bebidas e Petiscos</span>
+                    <h3 class="promo-card-title">Combos Start Fiesta</h3>
+                    <p class="promo-card-desc">
+                        Comece a noite com os nossos combos de petiscos com bebidas: Batata Frita + 2 Heinekens por **R$ 36,90** | Frango a Passarinho + 2 Heinekens por **R$ 54,90** | Carne de Sol + 2 Caipiroskas por **R$ 74,90**.
+                    </p>
+                    <div class="promo-price" style="color: var(--accent-light);">A partir de <span>R$ 36,90</span></div>
+                    <a href="https://wa.me/5561992827596?text=Olá!%20Estou%20na%20suíte%20e%20gostaria%20de%20pedir%20um%20dos%20Combos%20Start%20Fiesta." target="_blank" class="btn-add" style="justify-content: center; border-color: var(--accent); color: var(--accent-light); width: 100%; font-size: 0.72rem; padding: 0.8rem 1.5rem; border-radius: 4px;">
+                        <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
+                        Pedir na Suíte
+                    </a>
+                </div>
+
+                <!-- Promo 6: Batata Oferta -->
+                <div class="promo-card reveal">
+                    <span class="promo-tag tag-purple">Petisco</span>
+                    <h3 class="promo-card-title">Batata Frita Tradicional (500g)</h3>
+                    <p class="promo-card-desc">
+                        Nossa clássica porção generosa de batata frita super crocante e sequinha, servida na temperatura ideal. De R$ 22,90 por um valor exclusivo promocional.
+                    </p>
+                    <div class="promo-price" style="color: var(--accent-light);">R$ 15,00 <span>500g</span></div>
+                    <a href="https://wa.me/5561992827596?text=Olá!%20Estou%20na%20suíte%20e%20gostaria%20de%20pedir%20a%20Batata%20Frita%20em%20Oferta%20Especial." target="_blank" class="btn-add" style="justify-content: center; border-color: var(--accent); color: var(--accent-light); width: 100%; font-size: 0.72rem; padding: 0.8rem 1.5rem; border-radius: 4px;">
+                        <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
+                        Pedir na Suíte
+                    </a>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -650,7 +914,7 @@
                 Seu próximo momento especial<br>começa com <strong>uma mensagem</strong>.
             </p>
             <div class="booking-actions">
-                <a class="btn-wpp" href="https://wa.me/556133726060?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank">
+                <a class="btn-wpp" href="https://wa.me/5561992827596?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank">
                     <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
                     Reservar via WhatsApp
                 </a>

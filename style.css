@@ -150,14 +150,14 @@ box-shadow: 0 0 30px rgba(157, 78, 221, 0.5);
 
 /* ========== NAVIGATION ON HERO (NOT SCROLLED) ========== */
 .nav:not(.scrolled) .nav-links a {
-    color: var(--black);
+    color: var(--white-dim);
 }
 .nav:not(.scrolled) .nav-links a::after {
-    background: var(--black);
-    box-shadow: none;
+    background: var(--accent-light);
+    box-shadow: 0 0 10px var(--accent-light);
 }
 .nav:not(.scrolled) .nav-links a:hover {
-    color: var(--accent-dark);
+    color: var(--white);
 }
 
 /* ========== HERO SECTION ========== */

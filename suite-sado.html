@@ -382,6 +382,8 @@
         .nav-cta:hover { background: var(--white); color: var(--black); }
         @media (max-width: 900px) { .nav-links { display: none; } .nav-cta { display: none; } }
 
+    
+        .lightbox-btn:hover { color: var(--white) !important; border-color: rgba(255,255,255,0.3) !important; background: rgba(255,255,255,0.05) !important; }
     </style>
 </head>
 <body>
@@ -393,23 +395,27 @@
         <a class="nav-logo" href="index.html">
             FIESTA <span class="title-stroke">MOTEL</span>
         </a>
-                <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+                        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
             <li><a href="index.html#suites">Suítes</a></li>
+            <li><a href="index.html#promocoes">Promoções</a></li>
             <li><a href="cardapio.html">Cardápio</a></li>
             <li><a href="sexshop.html">Sex Shop</a></li>
+            <li><a href="index.html#localizacao">Como Chegar</a></li>
         </ul>
-        <a class="nav-cta" href="https://wa.me/556133726060?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank">Reservar Agora</a>
+        <a class="nav-cta" href="https://wa.me/5561992827596?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank">Reservar Agora</a>
      <div class="mobile-menu-btn" onclick="toggleMobileMenu()"><span class="iconify" data-icon="solar:hamburger-menu-linear"></span></div>
     </nav>
 
     <!-- MOBILE MENU -->
-        <div class="mobile-menu" id="mobileMenu">
-        <a href="index.html" onclick="toggleMobileMenu()">Home</a>
+            <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html#home" onclick="toggleMobileMenu()">Home</a>
         <a href="index.html#suites" onclick="toggleMobileMenu()">Suítes</a>
+        <a href="index.html#promocoes" onclick="toggleMobileMenu()">Promoções</a>
         <a href="cardapio.html" onclick="toggleMobileMenu()">Cardápio</a>
         <a href="sexshop.html" onclick="toggleMobileMenu()">Sex Shop</a>
-        <a href="https://wa.me/556133726060?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." style="margin-top:2rem; font-size:1rem; padding: 1rem 2rem; border: 1px solid var(--accent); color: var(--accent-light);" target="_blank" onclick="toggleMobileMenu()">Reservar Agora</a>
+        <a href="index.html#localizacao" onclick="toggleMobileMenu()">Como Chegar</a>
+        <a href="https://wa.me/5561992827596?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." style="margin-top:2rem; font-size:1rem; padding: 1rem 2rem; border: 1px solid var(--accent); color: var(--accent-light);" target="_blank" onclick="toggleMobileMenu()">Reservar Agora</a>
     </div>
 
 
@@ -435,7 +441,7 @@
             <h1 class="hero-title">Suíte<br><strong>Sado</strong></h1>
             <p class="hero-subtitle">Proposta intensa e fora do padrão</p>
             <div class="hero-cta-row">
-                <a class="btn-gold" href="https://wa.me/5561992827596?text=Olá!%20Gostaria%20de%20reservar%20a%20Suíte%20Premium" target="_blank">
+                <a class="btn-gold" href="https://wa.me/5561992827596?text=Ol%C3%A1%21%20Gostaria%20de%20reservar%20a%20Su%C3%ADte%20Sado" target="_blank">
                     <span class="iconify" data-icon="solar:calendar-bold"></span>
                     Reservar Agora
                 </a>
@@ -652,11 +658,11 @@
                 Seu próximo momento especial<br>começa com <strong>uma mensagem</strong>.
             </p>
             <div class="booking-actions reveal">
-                <a class="btn-wpp" href="https://wa.me/5561992827596?text=Olá!%20Gostaria%20de%20reservar%20a%20Suíte%20Premium" target="_blank">
+                <a class="btn-wpp" href="https://wa.me/5561992827596?text=Ol%C3%A1%21%20Gostaria%20de%20reservar%20a%20Su%C3%ADte%20Sado" target="_blank">
                     <span class="iconify" data-icon="ic:baseline-whatsapp"></span>
                     Reservar via WhatsApp
                 </a>
-                <a class="btn-phone" href="tel:+556133726060">
+                <a class="btn-phone" href="tel:+5561992827596">
                     <span class="iconify" data-icon="solar:phone-bold"></span>
                     (61) 3372-6060
                 </a>
@@ -675,13 +681,11 @@
     </footer>
 
     <!-- LIGHTBOX -->
-    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
         <button class="lightbox-close" onclick="closeLightboxDirect()">✕</button>
+        <button class="lightbox-btn prev" onclick="lightboxNav(-1)" style="position: absolute; left: 2rem; top: 50%; transform: translateY(-50%); z-index: 1010; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--gray); background: none; transition: all 0.3s ease;"><span class="iconify" data-icon="solar:arrow-left-linear"></span></button>
         <img class="lightbox-img" id="lightbox-img" src="" alt="">
-        <div class="lightbox-arrows">
-            <button class="lightbox-btn" onclick="lightboxNav(-1)"><span class="iconify" data-icon="solar:arrow-left-linear"></span></button>
-            <button class="lightbox-btn" onclick="lightboxNav(1)"><span class="iconify" data-icon="solar:arrow-right-linear"></span></button>
-        </div>
+        <button class="lightbox-btn next" onclick="lightboxNav(1)" style="position: absolute; right: 2rem; top: 50%; transform: translateY(-50%); z-index: 1010; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--gray); background: none; transition: all 0.3s ease;"><span class="iconify" data-icon="solar:arrow-right-linear"></span></button>
     </div>
 
     <script>
