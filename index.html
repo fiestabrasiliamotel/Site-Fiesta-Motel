@@ -195,12 +195,6 @@
         <div class="ambient-glow glow-purple" style="top: 30%; right: 10%; opacity: 0.15;"></div>
         <div style="max-width: 1200px; margin: 0 auto;">
             
-            <div class="section-label reveal" style="margin-bottom: 3rem;">
-                <span class="section-label-num" style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; color: var(--accent-light);">[ 02 ]</span>
-                <span style="width: 30px; height: 1px; background: var(--accent-light); opacity: 0.5; display: inline-block; margin: 0 10px; vertical-align: middle;"></span>
-                <span class="section-label-text" style="font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray);">Localização e Fachada</span>
-            </div>
-
             <div class="facade-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
                 <!-- Coluna Esquerda: Fachada -->
                 <div class="facade-image-wrapper reveal" style="border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); position: relative; box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
@@ -256,13 +250,7 @@
     <section class="promocoes reveal" id="promocoes" style="background: var(--black); padding: 8rem 5rem; border-top: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden;">
         <div class="ambient-glow glow-purple" style="bottom: 10%; left: 5%; opacity: 0.12;"></div>
         <div style="max-width: 1200px; margin: 0 auto;">
-            
-            <div class="section-label reveal" style="text-align: center; margin-bottom: 1.5rem; justify-content: center; display: flex;">
-                <span class="section-label-num" style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; color: var(--accent-light);">[ 03 ]</span>
-                <span style="width: 30px; height: 1px; background: var(--accent-light); opacity: 0.5; display: inline-block; margin: 0 10px; vertical-align: middle;"></span>
-                <span class="section-label-text" style="font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray);">Ofertas Especiais</span>
-            </div>
-            
+                        
             <div style="text-align: center; margin-bottom: 5rem;" class="reveal">
                 <h2 class="section-title" style="margin-bottom: 1rem;">PROMOÇÕES <span class="italic">VIGENTES</span></h2>
                 <p style="color: var(--gray-light); font-size: 1.1rem; max-width: 600px; margin: 0 auto; font-weight: 300; line-height: 1.6;">
@@ -302,6 +290,57 @@
                     border-color: rgba(232, 201, 122, 0.5);
                     box-shadow: 0 15px 35px rgba(0,0,0,0.5), 0 0 25px rgba(201, 168, 76, 0.15);
                     background: rgba(20, 17, 12, 0.75);
+                }
+                .btn-promo-gold {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.8rem;
+                    width: 100%;
+                    padding: 0.9rem 1.5rem;
+                    background: linear-gradient(135deg, #c9a84c 0%, #e8c97a 100%);
+                    color: #1a1000;
+                    font-size: 0.75rem;
+                    font-weight: 700;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    border-radius: 4px;
+                    border: none;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 4px 15px rgba(201, 168, 76, 0.25);
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+                .btn-promo-gold:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 25px rgba(201, 168, 76, 0.45);
+                    filter: brightness(1.08);
+                }
+                .btn-promo-outline {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.8rem;
+                    width: 100%;
+                    padding: 0.9rem 1.5rem;
+                    border: 1px solid var(--accent);
+                    color: var(--accent-light);
+                    background: rgba(157, 78, 221, 0.05);
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    border-radius: 4px;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 4px 15px rgba(157, 78, 221, 0.05);
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+                .btn-promo-outline:hover {
+                    background: var(--accent);
+                    color: var(--white);
+                    box-shadow: 0 8px 25px rgba(157, 78, 221, 0.3);
+                    transform: translateY(-2px);
                 }
                 .promo-tag {
                     display: inline-block;
@@ -370,7 +409,7 @@
                         Aproveite mais tempo no motel! Válido de segunda a quarta-feira (exceto feriados): comprou 1h leva 2h, comprou 2h leva 4h ou comprou 4h leva 8h.
                     </p>
                     <div class="promo-price" style="color: var(--gold-light);">Luxo <span>Exclusivo</span></div>
-                    <a href="https://wa.me/5561992827596?text=Olá!%20Gostaria%20de%20aproveitar%20a%20Promoção%20Tempo%20em%20Dobro%20na%20Suíte%20Luxo." target="_blank" class="btn-primary" style="background: var(--gold); border-color: var(--gold); color: #1a1000; justify-content: center; box-shadow: 0 0 15px rgba(201,168,76,0.2); width: 100%; font-size: 0.72rem; padding: 0.8rem 1.5rem; font-weight: 700; border-radius: 4px;">
+                    <a href="https://wa.me/5561992827596?text=Olá!%20Gostaria%20de%20aproveitar%20a%20Promoção%20Tempo%20em%20Dobro%20na%20Suíte%20Luxo." target="_blank" class="btn-promo-gold">
                         <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
                         Aproveitar Oferta
                     </a>
@@ -384,7 +423,7 @@
                         Pernoite estendido com 10 horas de permanência! Disponível de domingo a quarta-feira, com entrada flexível entre 22h e 6h. Garanta conforto com economia.
                     </p>
                     <div class="promo-price" style="color: var(--accent-light);">R$ 129,90 <span>/ 10h</span></div>
-                    <a href="https://wa.me/5561992827596?text=Olá!%20Gostaria%20de%20reservar%20a%20Promoção%2010h%20de%20Sossego%20na%20Suíte%20Luxo." target="_blank" class="btn-add" style="justify-content: center; border-color: var(--accent); color: var(--accent-light); width: 100%; font-size: 0.72rem; padding: 0.8rem 1.5rem; border-radius: 4px;">
+                    <a href="https://wa.me/5561992827596?text=Olá!%20Gostaria%20de%20reservar%20a%20Promoção%2010h%20de%20Sossego%20na%20Suíte%20Luxo." target="_blank" class="btn-promo-outline">
                         <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
                         Reservar Agora
                     </a>
@@ -398,7 +437,7 @@
                         Dois hambúrgueres artesanais (blend da casa de 160g, queijo, bacon, alface e tomate no pão brioche selado com molho especial) servidos com 2 Coca-Colas em lata de 350ml.
                     </p>
                     <div class="promo-price" style="color: var(--accent-light);">R$ 59,90 <span>Combo</span></div>
-                    <a href="https://wa.me/5561992827596?text=Olá!%20Estou%20na%20suíte%20e%20gostaria%20de%20pedir%20o%20Combo%20Casal%20Burger%20em%20promoção." target="_blank" class="btn-add" style="justify-content: center; border-color: var(--accent); color: var(--accent-light); width: 100%; font-size: 0.72rem; padding: 0.8rem 1.5rem; border-radius: 4px;">
+                    <a href="https://wa.me/5561992827596?text=Olá!%20Estou%20na%20suíte%20e%20gostaria%20de%20pedir%20o%20Combo%20Casal%20Burger%20em%20promoção." target="_blank" class="btn-promo-outline">
                         <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
                         Pedir na Suíte
                     </a>
@@ -412,7 +451,7 @@
                         Dois pratos completos pelo preço promocional! Deliciosos escalopes de contra-filé grelhados acompanhados de ovo frito, arroz branco, feijão, farofa e salada fresca.
                     </p>
                     <div class="promo-price" style="color: var(--accent-light);">R$ 59,90 <span>2 Pratos</span></div>
-                    <a href="https://wa.me/5561992827596?text=Olá!%20Estou%20na%20suíte%20e%20gostaria%20de%20pedir%20o%20Dueto%20Fiesta%20Brasil%20em%20promoção." target="_blank" class="btn-add" style="justify-content: center; border-color: var(--accent); color: var(--accent-light); width: 100%; font-size: 0.72rem; padding: 0.8rem 1.5rem; border-radius: 4px;">
+                    <a href="https://wa.me/5561992827596?text=Olá!%20Estou%20na%20suíte%20e%20gostaria%20de%20pedir%20o%20Dueto%20Fiesta%20Brasil%20em%20promoção." target="_blank" class="btn-promo-outline">
                         <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
                         Pedir na Suíte
                     </a>
@@ -426,7 +465,7 @@
                         Comece a noite com os nossos combos de petiscos com bebidas: Batata Frita + 2 Heinekens por **R$ 36,90** | Frango a Passarinho + 2 Heinekens por **R$ 54,90** | Carne de Sol + 2 Caipiroskas por **R$ 74,90**.
                     </p>
                     <div class="promo-price" style="color: var(--accent-light);">A partir de <span>R$ 36,90</span></div>
-                    <a href="https://wa.me/5561992827596?text=Olá!%20Estou%20na%20suíte%20e%20gostaria%20de%20pedir%20um%20dos%20Combos%20Start%20Fiesta." target="_blank" class="btn-add" style="justify-content: center; border-color: var(--accent); color: var(--accent-light); width: 100%; font-size: 0.72rem; padding: 0.8rem 1.5rem; border-radius: 4px;">
+                    <a href="https://wa.me/5561992827596?text=Olá!%20Estou%20na%20suíte%20e%20gostaria%20de%20pedir%20um%20dos%20Combos%20Start%20Fiesta." target="_blank" class="btn-promo-outline">
                         <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
                         Pedir na Suíte
                     </a>
@@ -440,7 +479,7 @@
                         Nossa clássica porção generosa de batata frita super crocante e sequinha, servida na temperatura ideal. De R$ 22,90 por um valor exclusivo promocional.
                     </p>
                     <div class="promo-price" style="color: var(--accent-light);">R$ 15,00 <span>500g</span></div>
-                    <a href="https://wa.me/5561992827596?text=Olá!%20Estou%20na%20suíte%20e%20gostaria%20de%20pedir%20a%20Batata%20Frita%20em%20Oferta%20Especial." target="_blank" class="btn-add" style="justify-content: center; border-color: var(--accent); color: var(--accent-light); width: 100%; font-size: 0.72rem; padding: 0.8rem 1.5rem; border-radius: 4px;">
+                    <a href="https://wa.me/5561992827596?text=Olá!%20Estou%20na%20suíte%20e%20gostaria%20de%20pedir%20a%20Batata%20Frita%20em%20Oferta%20Especial." target="_blank" class="btn-promo-outline">
                         <span class="iconify" data-icon="ic:baseline-whatsapp" style="font-size: 1.2rem;"></span>
                         Pedir na Suíte
                     </a>
