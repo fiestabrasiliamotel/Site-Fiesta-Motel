@@ -1112,48 +1112,58 @@
         const video = document.getElementById('hero-video');
         if (video) video.load();
 
-        // 1. HERO TRIGGER SÍNCRONO (Garante o pin-spacer de 2500px imediatamente)
-        ScrollTrigger.create({
-            trigger: ".hero",
-            start: "top top",
-            end: "+=2500", 
-            pin: true,
-            scrub: 0.1, 
-            onUpdate: (self) => {
-                if (video && video.duration) {
-                    video.currentTime = self.progress * video.duration;
-                }
-            }
-        });
-
-        // 2. SUITES HORIZONTAL TRIGGER (Lido após o Hero, respeita o pin-spacer)
-        const track = document.querySelector('.suites-grid');
-        if (track) {
-            function getScrollAmount() {
-                // Matemática de translação estrita: Largura total do track menos a própria área de visão interna (suites-inner) + um pequeno respiro
-                return Math.max(0, track.scrollWidth - document.querySelector('.suites-inner').clientWidth + 50); 
-            }
-
-            const tween = gsap.to(track, {
-                x: () => -getScrollAmount(), // Anima ate o ultimo card
-                ease: "none"
-            });
-
+        if (window.innerWidth > 900) {
+            // 1. HERO TRIGGER SÍNCRONO (Garante o pin-spacer de 2500px imediatamente)
             ScrollTrigger.create({
-                trigger: ".suites",
+                trigger: ".hero",
                 start: "top top",
-                end: () => `+=${getScrollAmount()}`,
+                end: "+=2500", 
                 pin: true,
-                animation: tween,
-                scrub: 1.5,
-                anticipatePin: 1,
-                invalidateOnRefresh: true, 
+                scrub: 0.1, 
+                onUpdate: (self) => {
+                    if (video && video.duration) {
+                        video.currentTime = self.progress * video.duration;
+                    }
+                }
             });
-            
-            // Força a fisica a reescanear a pagina APÓS todas as fotos pesarem e o width ser real
-            window.addEventListener('load', () => {
-                ScrollTrigger.refresh();
-            });
+
+            // 2. SUITES HORIZONTAL TRIGGER (Lido após o Hero, respeita o pin-spacer)
+            const track = document.querySelector('.suites-grid');
+            if (track) {
+                function getScrollAmount() {
+                    // Matemática de translação estrita: Largura total do track menos a própria área de visão interna (suites-inner) + um pequeno respiro
+                    return Math.max(0, track.scrollWidth - document.querySelector('.suites-inner').clientWidth + 50); 
+                }
+
+                const tween = gsap.to(track, {
+                    x: () => -getScrollAmount(), // Anima ate o ultimo card
+                    ease: "none"
+                });
+
+                ScrollTrigger.create({
+                    trigger: ".suites",
+                    start: "top top",
+                    end: () => `+=${getScrollAmount()}`,
+                    pin: true,
+                    animation: tween,
+                    scrub: 1.5,
+                    anticipatePin: 1,
+                    invalidateOnRefresh: true, 
+                });
+                
+                // Força a fisica a reescanear a pagina APÓS todas as fotos pesarem e o width ser real
+                window.addEventListener('load', () => {
+                    ScrollTrigger.refresh();
+                });
+            }
+        } else {
+            // No mobile/tablet, o vídeo roda em autoplay contínuo
+            if (video) {
+                video.setAttribute('autoplay', '');
+                video.setAttribute('loop', '');
+                video.setAttribute('muted', '');
+                video.play().catch(err => console.log("Video play failed:", err));
+            }
         }
     </script>
 
